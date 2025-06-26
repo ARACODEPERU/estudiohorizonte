@@ -8,6 +8,7 @@ use App\Http\Controllers\KardexController;
 use App\Http\Controllers\LocalSaleController;
 use App\Http\Controllers\ParametersController;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -15,7 +16,6 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\MetaController;
 use App\Http\Controllers\ModuloController;
-use App\Http\Controllers\WebController;
 use App\Http\Controllers\WebPageController;
 use App\Mail\StudentRegistrationMailable;
 use App\Models\District;
@@ -26,14 +26,21 @@ use Illuminate\Support\Facades\Mail;
 use Modules\Blog\Http\Controllers\BlogController;
 use Modules\Sales\Http\Controllers\SalesController;
 
-Route::get('/', [LandingController::class, 'index'])->name('index_main');
-Route::get('/facturador', [LandingController::class, 'biller'])->name('biller_main');
-Route::get('/news', [LandingController::class, 'blog'])->name('blog_main');
-Route::get('/terms', [LandingController::class, 'terms'])->name('terms_main');
-Route::get('/computer/store', [LandingController::class, 'computerStore'])->name('index_computer_store');
-Route::get('/prices/academic', [LandingController::class, 'academicPrices'])->name('academic_prices');
-Route::get('/curso-descripcion/{id}', [WebPageController::class, 'cursodescripcion'])->name('web_curso_descripcion');
+// Rutas en Blade
+Route::get('/home', [WebPageController::class, 'index'])->name('index_main');
 
+// Route::get('/', [WebPageController::class, 'construction'])->name('construction');
+Route::get('/', [WebPageController::class, 'index'])->name('index_main');
+Route::get('/nosotros', [WebPageController::class, 'about'])->name('web_about');
+Route::get('/cursos', [WebPageController::class, 'courses'])->name('web_courses');
+Route::get('/curso-descripcion',  [WebPageController::class, 'coursedescription'])->name('web_course_description');
+// Route::get('/curso-descripcion/{id}', [WebPageController::class, 'coursedescription'])->name('web_course_description');
+Route::get('/carrito', [WebPageController::class, 'shopcart'])->name('web_carrito');
+Route::get('/pagar', [WebPageController::class, 'pay'])->name('web_pay');
+Route::get('/gracias', [WebPageController::class, 'thanks'])->name('web_thanks');
+Route::get('/email', [WebPageController::class, 'email'])->name('web_email');
+Route::get('/contactanos', [WebPageController::class, 'contact'])->name('web_contact_us');
+Route::get('/prices/academic', [LandingController::class, 'academicPrices'])->name('academic_prices');
 //////mensajes de whatsapp///////
 Route::get('/ask/product/{id}', [LandingController::class, 'redirectToWhatsApp'])->name('whatsapp_send');
 
@@ -72,9 +79,7 @@ Route::get('/mipais', function () {
 
 
 
-Route::get('/dashboard', [DashboardController::class, 'index'])
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::resource('clients', ClientController::class);
@@ -121,6 +126,8 @@ Route::middleware('auth')->group(function () {
         'general/stock',
         [KardexController::class, 'generalStock']
     )->name('generalstock');
+
+
 
     Route::get(
         'company/show',
@@ -195,17 +202,23 @@ Route::middleware('auth')->group(function () {
         [PersonController::class, 'updateInformationPerson']
     )->name('user-update-profile-store');
 
-    Route::post(
+	Route::post(
         'person/birthdays',
         [PersonController::class, 'getBirthdays']
     )->name('person-birthdays');
-
+	
     Route::get('calendar/index', [CalendarController::class, 'index'])->name('calendar');
-
     ///////////////META FACEBOOK WHATSAPP/////////////////
 
     Route::post('meta/whatsapp/message/send', [MetaController::class, 'sendMessageWhatsapp'])->name('meta_whatsapp_message_send');
 });
 
+
+//CERTIFICADOS AUTOMATIZACIÓN Y PRUEBAS
+Route::get('/test-image/{student_id}/{certificate_id}', [WebController::class, 'testimage'])->name('test-image');
+
+Route::post('online/client/pay/form', [WebPageController::class, 'formMercadopagoBlade'])->name('web_client_account_store');
+Route::post('online/client/pay/process', [WebPageController::class, 'processPaymentMercadopago'])->name('web_client_account_process');
+Route::get('online/client/pay/{id}/congratulations', [WebPageController::class, 'graciasCompra'])->name('web_felicitaciones_compra');
 require __DIR__ . '/auth.php';
 require __DIR__ . '/system.php';

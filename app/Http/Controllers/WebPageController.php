@@ -47,7 +47,7 @@ class WebPageController extends Controller
 
     public function index()
     {
-        return view('pages.home');
+        return view('layouts.webpage');
     }
 
     public function nosotros()
