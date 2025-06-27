@@ -45,7 +45,8 @@ START: Default CSS
   --ed-color-common-black: #000000;
   --ed-color-heading-primary: #162726;
   --ed-color-text-body: #6C706F;
-  --ed-color-theme-primary: #07A698;
+  /* --ed-color-theme-primary: #07A698; */
+  --ed-color-theme-primary: #ff5406;
   --ed-color-grey-1: #F2F4F7;
   --ed-color-grey-2: #F2F4F7;
   --ed-color-bg-1: #0E121D;
