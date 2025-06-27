@@ -30,7 +30,7 @@
         @yield('content')
 
         <div id="scrollup">
-            <button id="scroll-top" class="scroll-to-top"><i class="fa-regular fa-arrow-up-long"></i></button>
+            <button id="scroll-top" class="scroll-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         </div>
         <!--scrollup-->
 
