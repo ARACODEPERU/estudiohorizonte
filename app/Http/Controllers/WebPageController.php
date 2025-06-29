@@ -50,6 +50,18 @@ class WebPageController extends Controller
         return view('pages.home');
     }
 
+    
+    public function about()
+    {
+        return view('pages.about');
+    }
+
+    
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+
     public function nosotros()
     {
 
@@ -93,9 +105,9 @@ class WebPageController extends Controller
 
     public function courses()
     {
-        $courses = OnliItem::with('course')->get();
-        $courses = $courses->shuffle();
-        $categories = AcaCategoryCourse::all();
+        // $courses = OnliItem::with('course')->get();
+        // $courses = $courses->shuffle();
+        // $categories = AcaCategoryCourse::all();
 
         // $banner = CmsSection::where('component_id', 'cursos_banner_area_14')  //siempre cambiar el id del componente
         //     ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -107,22 +119,24 @@ class WebPageController extends Controller
         //     ->orderBy('cms_section_items.position')
         //     ->first();
 
-        $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->get();
+        // $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
+        //     ->join('cms_section_items', 'section_id', 'cms_sections.id')
+        //     ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+        //     ->select(
+        //         'cms_items.content',
+        //         'cms_section_items.position'
+        //     )
+        //     ->orderBy('cms_section_items.position')
+        //     ->get();
 
-        return view('pages.courses', [
-            'courses' => $courses,
-            'categories' => $categories,
-            // 'banner' => $banner,
-            'title' => $title
-        ]);
+        // return view('pages.courses', [
+        //     'courses' => $courses,
+        //     'categories' => $categories,
+        //     // 'banner' => $banner,
+        //     'title' => $title
+        // ]);
+        
+        return view('pages.courses');
     }
 
     public function coursedescription($id)

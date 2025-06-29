@@ -31,11 +31,11 @@
                             <div class="mobile-menu-items">
                                 <ul class="sub-menu">
                                     <li class="menu-item-has-children active">
-                                        <a href="">Home</a>
+                                        <a href="{{ route('index_main') }}">Home</a>
                                     </li>
-                                    <li><a href="">Nosotros</a></li>
-                                    <li><a href="">Cursos</a></li>
-                                    <li><a href="">Contacto</a></li>
+                                    <li><a href="{{ route('web_about') }}">Nosotros</a></li>
+                                    <li><a href="{{ route('web_courses') }}">Formación Continua</a></li>
+                                    <li><a href="{{ route('web_contact_us') }}">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
