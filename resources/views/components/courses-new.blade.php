@@ -43,13 +43,13 @@
                                 <div class="course-item">
                                     <div class="course-thumb-wrap">
                                         <div class="course-thumb">
-                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Categoria</span>
-                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/images/course-img-1.png" alt="course"></a>
+                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
                                         </div>
                                     </div>
                                     <div class="course-content">
                                         <h3 class="title">
-                                            <a href="{{ route('web_course_description') }}">React Tutorial Beginners For Skills Building Carrera</a>
+                                            <a href="{{ route('web_course_description') }}">Sentir la aquitectura</a>
                                         </h3>
                                         <div class="course-author-box">
                                             <div class="course-author">
@@ -62,7 +62,182 @@
                                                 </div>
                                             </div>
                                             <ul class="course-review">
-                                                <li><span class="price">$59.00</span></li>
+                                                <li><span class="price">Ingreso Libre</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="{{ route('web_course_description') }}" class="course-btn">Leer Más</a>
+                                        <a href="" class="ed-primary-btn-2">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="title">
+                                            <a href="{{ route('web_course_description') }}">Sentir la aquitectura</a>
+                                        </h3>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href=""><h4 class="name">Kevin Perry</h4></a>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><span class="price">Ingreso Libre</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="{{ route('web_course_description') }}" class="course-btn">Leer Más</a>
+                                        <a href="" class="ed-primary-btn-2">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="title">
+                                            <a href="{{ route('web_course_description') }}">Sentir la aquitectura</a>
+                                        </h3>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href=""><h4 class="name">Kevin Perry</h4></a>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><span class="price">Ingreso Libre</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="{{ route('web_course_description') }}" class="course-btn">Leer Más</a>
+                                        <a href="" class="ed-primary-btn-2">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="title">
+                                            <a href="{{ route('web_course_description') }}">Sentir la aquitectura</a>
+                                        </h3>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href=""><h4 class="name">Kevin Perry</h4></a>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><span class="price">Ingreso Libre</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="{{ route('web_course_description') }}" class="course-btn">Leer Más</a>
+                                        <a href="" class="ed-primary-btn-2">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="title">
+                                            <a href="{{ route('web_course_description') }}">Sentir la aquitectura</a>
+                                        </h3>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href=""><h4 class="name">Kevin Perry</h4></a>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><span class="price">Ingreso Libre</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <a href="{{ route('web_course_description') }}" class="course-btn">Leer Más</a>
+                                        <a href="" class="ed-primary-btn-2">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="title">
+                                            <a href="{{ route('web_course_description') }}">Sentir la aquitectura</a>
+                                        </h3>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href=""><h4 class="name">Kevin Perry</h4></a>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><span class="price">Ingreso Libre</span></li>
                                             </ul>
                                         </div>
                                     </div>

@@ -42,8 +42,9 @@ START: Default CSS
   --ed-fs-h5: 16px;
   --ed-fs-h6: 14px;
   --ed-color-common-white: #ffffff;
-  --ed-color-common-black: #000000;
-  --ed-color-heading-primary: #162726;
+  --ed-color-common-black: #000000; 
+  /* --ed-color-heading-primary: #162726; */
+  --ed-color-heading-primary: #32464b;
   --ed-color-text-body: #6C706F;
   /* --ed-color-theme-primary: #07A698; */
   --ed-color-theme-primary: #7d876e;
@@ -2248,7 +2249,8 @@ START: Header CSS
   box-shadow: 0px 1px 3px 0px rgba(17, 17, 17, 0);
 }
 .header .top-bar {
-  background-color: #1F2C30;
+  /* background-color: #1F2C30; */
+  background-color: #32464b;
 }
 @media (max-width: 1200px) {
   .header .top-bar {

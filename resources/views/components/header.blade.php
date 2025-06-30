@@ -1,6 +1,6 @@
 <div>
     <header class="header header-3 header-6 header-7 sticky-active">
-            <div class="top-bar">
+            <div class="top-bar" style="background: #32464b;">
                 <div class="container">
                     <div class="top-bar-inner">
                         <div class="top-bar-left">
