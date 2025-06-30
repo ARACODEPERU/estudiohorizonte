@@ -1,5 +1,5 @@
 <div>
-    <footer class="footer-section pt-120" data-background="themes/webpage/assets/img/bg-img/footer-bg.png">
+    <footer class="footer-section pt-120" data-background="themes/webpage/assets/img/bg-img/footer-bg.jpg">
             <div class="footer-top-wrap">
                 <div class="container">
                     {{-- <div class="footer-top text-center">

@@ -1,5 +1,5 @@
 <div>
-    <section class="service-promo pt-120 pb-120">
+    <section class="service-promo pt-120 pb-120" style="background: #32464b;">
             <div class="service-promo-container container">
                 <div class="service-promo-wrap">
                     <div class="service-promo-item">
