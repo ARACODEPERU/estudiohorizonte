@@ -2161,6 +2161,7 @@ ul {
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: -1;
 }
+
 .ed-primary-btn:hover {
   color: var(--ed-color-common-white);
 }
@@ -2168,6 +2169,50 @@ ul {
   transform-origin: left center;
   transform: scale(1, 1);
 }
+
+
+.ed-primary-btn-2 {
+  background-color: var(--ed-color-theme-primary);
+  font-family: var(--ed-ff-heading);
+  color: var(--ed-color-common-white);
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+}
+
+.ed-primary-btn-2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  transform-origin: right center;
+  transform: scale(0, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.ed-primary-btn-2:hover {
+  color: var(--ed-color-common-white);
+}
+.ed-primary-btn-2:hover:before {
+  transform-origin: left center;
+  transform: scale(1, 1);
+}
+
+
+
 .ed-primary-btn i {
   margin-left: 10px;
   font-size: 13px;
@@ -5798,13 +5843,26 @@ START: Course CSS
     padding: 30px 20px;
   }
 }
+
+.course-item .course-thumb .offer {
+  background-color: rgba(7, 166, 152, 0.1);
+  color: var(--ed-color-theme-primary);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 0 100px 100px 0;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
 .course-item .course-content .offer {
   background-color: rgba(7, 166, 152, 0.1);
   color: var(--ed-color-theme-primary);
   font-size: 14px;
   font-weight: 700;
   padding: 5px 15px;
-  border-radius: 100px;
+  border-radius: 0 100px 100px 0;
   display: inline-block;
   margin-bottom: 20px;
 }
