@@ -7,15 +7,9 @@
         <x-header/>
         <!-- /.Main Header -->
 
-        <section class="page-header" style="padding: 40px;">
-            <div class="bg-item">
-                <div class="bg-img" data-background="themes/webpage/assets/img/bg-img/page-header-bg.png"></div>
-                <div class="overlay"></div>
-                <div class="shapes">
-                    <div class="shape shape-1"><img src="themes/webpage/assets/img/shapes/page-header-shape-1.png" alt="shape"></div>
-                    <div class="shape shape-2"><img src="themes/webpage/assets/img/shapes/page-header-shape-2.png" alt="shape"></div>
-                    <div class="shape shape-3"><img src="themes/webpage/assets/img/shapes/page-header-shape-3.png" alt="shape"></div>
-                </div>
+        <section class="page-header" style="padding: 60px;">
+            <div class="bg-img">
+                <img src="themes/webpage/assets/img/bg-img/page-header-bg.jpg" alt="bg" style="width: 100%;">
             </div>
             <div class="container">
                 <div class="page-header-content">

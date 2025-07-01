@@ -21,8 +21,12 @@
                             </div>
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="content">
-                                <h4 class="title">Razón 1</h4>
-                                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus sit <br> voluptatemec lifes accusantium</p>
+                                <h4 class="title">Enfoque integral y sostenible:</h4>
+                                <p class="mb-0">
+                                    La empresa combina conocimientos y metodologías sociales, ambientales y técnicas para garantizar 
+                                    la alta calidad de sus proyectos, lo que garantiza un enfoque integral y sostenible en sus diseños y 
+                                    proyectos urbanos.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -34,8 +38,12 @@
                             </div>
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="content">
-                                <h4 class="title">Razón 2</h4>
-                                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus sit <br> voluptatemec lifes accusantium</p>
+                                <h4 class="title">Experiencia y reconocimiento:</h4>
+                                <p class="mb-0">
+                                    Estudio Horizonte cuenta con experiencia en proyectos arquitectónicos y urbanos en distintas ciudades 
+                                    de la región, y su trabajo ha sido reconocido en concursos, exposiciones y eventos nacionales, lo que 
+                                    demuestra su capacidad y calidad en su trabajo.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -47,8 +55,12 @@
                             </div>
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="content">
-                                <h4 class="title">Razón 3</h4>
-                                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus sit <br> voluptatemec lifes accusantium</p>
+                                <h4 class="title">Compromiso con la transformación positiva:</h4>
+                                <p class="mb-0">
+                                    La empresa busca transformar relaciones, construir confianza, fortalecer la cultura, impulsar la innovación y 
+                                    recuperar los vínculos con la naturaleza, lo que refleja su compromiso con la transformación positiva de las 
+                                    ciudades y la sociedad.
+                                </p>
                             </div>
                         </div>
                     </div>
