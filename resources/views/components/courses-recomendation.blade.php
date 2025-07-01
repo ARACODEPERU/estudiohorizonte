@@ -57,7 +57,9 @@
                                     <div class="course-thumb-wrap">
                                         <div class="course-thumb">
                                             <span class="offer" style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
-                                            <a href="{{ route('web_course_description') }}"><img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course"></a>
+                                            <a href="{{ route('web_course_description') }}">
+                                                <img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course" style="width: 100%;">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="course-content">
