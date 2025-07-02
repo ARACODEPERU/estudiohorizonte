@@ -9,7 +9,7 @@
 
         <section class="page-header" style="padding: 60px;">
             <div class="bg-img">
-                <img src="themes/webpage/assets/img/bg-img/page-header-bg.jpg" alt="bg" style="width: 100%;">
+                <img src="{{ asset('themes/webpage/assets/img/bg-img/page-header-bg.jpg') }}" alt="bg" style="width: 100%;">
             </div>
             <div class="container">
                 <div class="page-header-content">
@@ -27,59 +27,37 @@
         <section class="about-section pt-120 pb-120">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-12">
+                    <div class="col-xl-4 col-lg-12">
                         <div class="about-img-wrap wow fade-in-left" data-wow-delay="400ms">
-                            <div class="about-img-1">
-                                <img src="themes/webpage/assets/img/images/about-img-1.jpg" alt="about">
-                                <div class="video-btn">
-                                    <a
-                                        class="video-popup venobox"
-                                        data-autoplay="true"
-                                        data-vbtype="video"
-                                        href="https://youtu.be/JwC-Qx1lJso">
-                                        <div class="play-btn">
-                                            <i class="fa-sharp fa-solid fa-play"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="about-img-2">
-                                <img src="themes/webpage/assets/img/images/about-img-2.jpg" alt="about">
-                            </div>
-                            <div class="about-contact">
-                                <div class="icon"><i class="fa-sharp fa-regular fa-phone-volume"></i></div>
-                                <div class="content">
-                                    <span>Online Support</span>
-                                    <a href="tel:+2581523659">+258 152 3659</a>
-                                </div>
-                            </div>
+                            <img src="{{ asset('themes/webpage/assets/img/Julio_Flores.jpg') }}" alt="CEO">
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-12">
+                    <div class="col-xl-8 col-lg-12">
                         <div class="about-content">
                             <div class="section-heading mb-40">
-                                <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Get More About Us</h4>
-                                <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Over 10 Years in Distant learning <br>for Skill Development</h2>
-                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">Compellingly procrastinate equity invested markets with efficient process improvements.  actualize mission-critical partnerships with integrated portals. Authoritatively optimize low-risk high-yield metrics and plug-and-play potentialities.</p>
-                            </div>
-                            <div class="about-counter-items wow fade-in-bottom" data-wow-delay="600ms">
-                                <div class="about-counter-item">
-                                    <div class="icon"><img src="themes/webpage/assets/img/icon/about-1.png" alt="about"></div>
-                                    <div class="content">
-                                        <h3 class="title"><span class="odometer" data-count="9.5">0</span><span class="number">k+</span></h3>
-                                        <p>Total active students taking <br>gifted courses</p>
-                                    </div>
-                                </div>
-                                <div class="about-counter-item">
-                                    <div class="icon"><img src="themes/webpage/assets/img/icon/about-2.png" alt="about"></div>
-                                    <div class="content">
-                                        <h3 class="title"><span class="odometer" data-count="6.7">0</span><span class="number">k+</span></h3>
-                                        <p>Total active students taking <br>gifted courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-btn wow fade-in-bottom" data-wow-delay="700ms">
-                                <a href="about.html" class="ed-primary-btn">Start Free Trial</a>
+                                <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
+                                    <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                                    CEO & Fundador
+                                </h4>
+                                <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
+                                    Arq. JULIO FLORES
+                                </h2>
+                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">
+                                    Arquitecto con mención sobresaliente, Julio Flores lidera nuestra organización con una sólida trayectoria académica y 
+                                    profesional en el sector arquitectura, urbanismo y construcción. Es Magíster en Dirección de la Construcción por la 
+                                    Universidad Peruana de Ciencias Aplicadas (UPC), institución donde también se especializó en BIM Management y Lean Construction, 
+                                    herramientas clave para la gestión moderna de proyectos constructivos.
+                                </p>
+                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">
+                                    Su enfoque integral del desarrollo urbano se fortalece con estudios internacionales en Diseño del Paisaje en la Pontificia 
+                                    Universidad Católica de Chile (UC), Proyección Urbanística en la Universitat Politècnica de Catalunya (España), 
+                                    y Derecho Urbanístico en la Pontificia Universidad Católica del Perú (PUCP).
+                                </p>
+                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">
+                                    Gracias a su visión estratégica, capacidad de innovación y profundo conocimiento técnico, Julio ha impulsado proyectos de 
+                                    alto impacto que integran eficiencia, sostenibilidad y calidad urbana. Su liderazgo inspira al equipo a trabajar con excelencia 
+                                    y compromiso en cada etapa del desarrollo arquitectónico.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -91,16 +69,26 @@
         <section class="about-feature pt-120 pb-120">
             <div class="container">
                 <div class="section-heading text-center">
-                    <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Our Features</h4>
-                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Online Education That Improves You</h2>
+                    <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
+                        <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                        Nuestra Esencia y Visión
+                    </h4>
+                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
+                        Quiénes Somos y Qué Nos Mueve
+                    </h2>
                 </div>
                 <div class="row gy-lg-0 gy-5">
                     <div class="col-lg-4 col-md-6">
                         <div class="about-feature-card">
                             <div class="icon"><img src="themes/webpage/assets/img/icon/about-feature-1.png" alt="icon"></div>
                             <div class="content">
-                                <h3 class="title">Interactive Learning Tools</h3>
-                                <p>Incorporating features like quizzes, <br> simulations, and multimedia content that <br> actively engage students.</p>
+                                <h3 class="title">1. Quiénes somos y cómo trabajamos</h3>
+                                <p>
+                                    <b>Estudio Horizonte</b> es una oficina de diseño, arquitectura, paisaje y territorio que proyecta la ciudad y el territorio a partir 
+                                    de la colaboración interdisciplinaria, la participación ciudadana y una comprensión estratégica de las dinámicas sociales, 
+                                    infraestructurales y ecológicas. Somos un espacio de encuentro y conversación para explorar, conectar y co-crear en torno al diseño. 
+                                    Nuestra aproximación integral combina conocimientos y metodologías sociales, ambientales y técnicas para asegurar la alta calidad en cada uno de nuestros proyectos.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -108,8 +96,13 @@
                         <div class="about-feature-card">
                             <div class="icon"><img src="themes/webpage/assets/img/icon/about-feature-1.png" alt="icon"></div>
                             <div class="content">
-                                <h3 class="title">Easy Flexible Access</h3>
-                                <p>Incorporating features like quizzes, <br> simulations, and multimedia content that <br> actively engage students.</p>
+                                <h3 class="title">2. Enfoque, especialidad e impacto</h3>
+                                <p>
+                                    <b>Nuestro enfoque</b> trasciende la creación de espacios físicos: buscamos transformar relaciones, construir confianza, fortalecer la cultura, 
+                                    impulsar la innovación y reconectar con la naturaleza. Nos especializamos en arquitectura, proyectos urbanos resilientes, 
+                                    mejoramiento de barrios vulnerables e infraestructura sostenible, aplicando una metodología multiescalar e interdisciplinaria que 
+                                    ha permitido implementar programas y proyectos en distintas ciudades del Perú y la región.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -117,8 +110,13 @@
                         <div class="about-feature-card">
                             <div class="icon"><img src="themes/webpage/assets/img/icon/about-feature-1.png" alt="icon"></div>
                             <div class="content">
-                                <h3 class="title">Personalized Learning Paths</h3>
-                                <p>Incorporating features like quizzes, <br> simulations, and multimedia content that <br> actively engage students.</p>
+                                <h3 class="title">3. Colaboraciones, reconocimiento y propósito</h3>
+                                <p>
+                                    <b>Trabajamos junto</b> a entidades públicas, privadas, multilaterales y universidades.
+                                    Dirigido por el arquitecto Julio Flores, Estudio Horizonte integra práctica, docencia e investigación para innovar en la vida urbana.
+                                    Compartimos conocimiento y fortalecemos el rol del arquitecto en la transformación de las ciudades.
+                                    Nuestro propósito: crear espacios sostenibles que fomenten la interacción, el bienestar y una visión renovada del territorio.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +125,7 @@
         </section>
         <!-- ./ about-feature -->
 
-        <section class="counter-section">
+        {{-- <section class="counter-section">
             <div class="container">
                 <div class="row counter-wrap gy-lg-0 gy-5">
                     <div class="col-lg-3 col-md-6">
@@ -156,10 +154,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- ./ counter-section -->
 
-        <section class="team-section pt-120 pb-120">
+        {{-- <section class="team-section pt-120 pb-120">
             <div class="container">
                 <div class="section-heading text-center">
                     <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Our Instructors</h4>
@@ -248,7 +246,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- ./ team-section --> 
 
         <section class="testimonial-section-3 pt-120 pb-120">
@@ -261,10 +259,17 @@
                     <div class="col-xl-5 col-lg-12">
                         <div class="testi-left-content white-content">
                             <div class="section-heading mb-20 white-content">
-                                <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Our Testimonials</h4>
-                                <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">What Students Think and <br>Say About EdCare</h2>
+                                <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
+                                    <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                                    Testimonios
+                                </h4>
+                                <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
+                                    Transformando vidas a través de la educación
+                                </h2>
                             </div>
-                            <p class="mb-0 wow fade-in-bottom" data-wow-delay="500ms">Empowering businesses with cutting-edge technology, reliable support, <br> and seamless integration.</p>
+                            <p class="mb-0 wow fade-in-bottom" data-wow-delay="500ms">
+                                Cada historia refleja el impacto real de nuestra propuesta educativa. Descubre cómo <b>Estudio Horizonte</b> ha sido parte del crecimiento personal y profesional de nuestros estudiantes.
+                            </p>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-12">
@@ -299,14 +304,20 @@
         <section class="video-feature-section pt-120 pb-120">
             <div class="container">
                 <div class="section-heading text-center">
-                    <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Our Features</h4>
-                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Founded by Industry Leaders With <br>Large Scale Business</h2>
+                    <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
+                        <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                        Formación Continua
+                    </h4>
+                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
+                        Contenidos formativos diseñados para aprender de forma práctica y dinámica
+                    </h2>
                 </div>
                 <div class="row gy-md-0 gy-4">
                     <div class="col-md-6">
                         <div class="video-feature text-center">
                             <div class="video-thumb">
-                                <img src="themes/webpage/assets/img/images/video-img-1.png" alt="video">
+                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/132pYn0EnQQ" title="Sesión 1 - Julio Calderón Cockburn + Carmen Omonte Miraval + Mariano Quiroga Robles - II SINACT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                {{-- <img src="themes/webpage/assets/img/images/video-img-1.png" alt="video">
                                 <div class="video-btn">
                                     <a class="video-popup venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/JwC-Qx1lJso?feature=shared">
                                         <div class="play-btn">
@@ -314,18 +325,19 @@
                                         </div>
                                         <div class="ripple"></div>
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="video-content">
-                                <h3 class="title">Career Opportunities in EdCare</h3>
-                                <p>Appropriately recaptiualize cooperative catalysts change through <br> prospective leadership nvisioneer goal-oriented</p>
+                                {{-- <h3 class="title">Sesión 1 - Julio Calderón Cockburn + Carmen Omonte Miraval + Mariano Quiroga Robles - II SINACT</h3> --}}
+                                {{-- <p>Appropriately recaptiualize cooperative catalysts change through <br> prospective leadership nvisioneer goal-oriented</p> --}}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="video-feature text-center">
                             <div class="video-thumb">
-                                <img src="themes/webpage/assets/img/images/video-img-2.png" alt="video">
+                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/vCrPeqIioQ4" title="Sesión 3: Federico Napoli + Simone Censi - II SINACT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                {{-- <img src="themes/webpage/assets/img/images/video-img-2.png" alt="video">
                                 <div class="video-btn">
                                     <a class="video-popup venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/JwC-Qx1lJso?feature=shared">
                                         <div class="play-btn">
@@ -333,11 +345,11 @@
                                         </div>
                                         <div class="ripple"></div>
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="video-content">
-                                <h3 class="title">Become A Partner Of EdCare</h3>
-                                <p>Appropriately recaptiualize cooperative catalysts change through <br> prospective leadership nvisioneer goal-oriented</p>
+                                {{-- <h3 class="title">Sesión 3: Federico Napoli + Simone Censi - II SINACT</h3> --}}
+                                {{-- <p>Appropriately recaptiualize cooperative catalysts change through <br> prospective leadership nvisioneer goal-oriented</p> --}}
                             </div>
                         </div>
                     </div>
