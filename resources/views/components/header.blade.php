@@ -5,9 +5,9 @@
                     <div class="top-bar-inner">
                         <div class="top-bar-left">
                             <ul class="top-bar-list">
-                                <li><i class="fa fa-phone"></i><a href="tel:256214203215">256 214 203 215</a></li>
-                                <li><i class="fa fa-location-dot"></i><span>258 Helano Street, New York</span></li>
-                                <li><i class="fa fa-clock"></i><span>Mon - Sat: 8:00 - 15:00</span></li>
+                                <li><i class="fa fa-phone"></i><a href="">(+51) 990 906 405</a></li>
+                                <li><i class="fa fa-location-dot"></i><span>Chimbote</span></li>
+                                <li><i class="fa fa-clock"></i><span>Lun - Viernes: 9:00 - 20:00</span></li>
                             </ul>
                         </div>
                         <div class="top-bar-right">

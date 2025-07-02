@@ -14,33 +14,41 @@
             </div>
             <div class="container">
                 <div class="page-header-content">
-                    <h1 class="title">Contact Us</h1>
-                    <h4 class="sub-title"><a class="home" href="index.html">Home </a><span class="icon">/</span><a class="inner-page" href="contact.html"> Contact Us</a></h4>
+                    <h1 class="title">Contactanos</h1>
+                    <h4 class="sub-title">
+                        <a class="home" href="{{ route('index_main') }}">Home </a>
+                        <span class="icon">/</span>
+                        <a class="inner-page" href=""> Contactanos</a>
+                    </h4>
                 </div>
             </div>
         </section>
         <!-- ./ page-header -->
 
-        <section class="contact-section pt-120 pb-120">
+        <section class="contact-section pt-80 pb-120">
             <div class="container">
                 <div class="row gy-lg-0 gy-5">
                     <div class="col-lg-7">
                         <div class="blog-contact-form contact-form">
-                            <h2 class="title mb-0">Leave A Reply</h2>
-                            <p class="mb-30 mt-10">Fill-up The Form and Message us of your amazing question</p>
+                            <h2 class="title mb-0">¿Hablamos?</h2>
+                            <p class="mb-30 mt-10">
+                                En <span><b>Estudio Horizonte</b></span>, estamos listos para ayudarte. Si tienes preguntas, necesitas más información o quieres 
+                                comenzar un proyecto con nosotros, no dudes en ponerte en contacto. Completa el formulario o utiliza los medios que prefieras: 
+                                estamos aquí para escucharte.
+                            </p>
                             <div class="request-form">
                                 <form action="mail.php" method="post" id="ajax_contact" class="form-horizontal">
                                     <div class="form-group row">
                                         <div class="col-md-6">
                                             <div class="form-item">
-                                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Your Name">
-                                                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Nombre Completo">
+                                                <div class="icon"><i class="fa fa-user"></i></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-item">
-                                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email">
-                                                <div class="icon"><i class="fa-sharp fa-regular fa-envelope"></i></div>
+                                                <input type="email" id="email" name="email" class="form-control" placeholder="Correo Eléctronico">
+                                                <div class="icon"><i class="fa fa-envelope"></i></div>
                                             </div>
                                         </div>
                                     </div>
@@ -48,10 +56,9 @@
                                         <div class="col-md-12">
                                             <div class="form-item">
                                                 <select name="subject" id="subject" class="niceSelect select-control form-control">
-                                                    <option value="">Select Subject</option>
-                                                    <option value="2">Plan 1</option>
-                                                    <option value="3">Plan 2</option>
-                                                    <option value="4">Plan 3</option>
+                                                    <option value="Formación Académica">Formación Académica</option>
+                                                    <option value="Consultoria">Consultoria</option>
+                                                    <option value="Otros">Otros</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -59,13 +66,13 @@
                                     <div class="form-group row">
                                         <div class="col-md-12">
                                             <div class="form-item message-item">
-                                                <textarea id="message" name="message" cols="30" rows="5" class="form-control address" placeholder="Message"></textarea>
-                                                <div class="icon"><i class="fa-light fa-messages"></i></div>
+                                                <textarea id="message" name="message" cols="30" rows="5" class="form-control address" placeholder="Mensaje"></textarea>
+                                                <div class="icon"><i class="fab fa-messages"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="submit-btn">
-                                        <button id="submit" class="ed-primary-btn" type="submit">Submit Message</button>
+                                        <button id="submit" class="ed-primary-btn" type="submit">Enviar Mensaje</button>
                                     </div>
                                 </form>
                                 <div id="form-messages" class="alert mt-20"></div>
@@ -75,8 +82,11 @@
                     <div class="col-lg-5 col-md-12">
                         <div class="contact-content">
                             <div class="contact-top">
-                                <h3 class="title">Office Information</h3>
-                                <p>Completely recapitalize 24/7 communities via standards compliant metrics whereas.</p>
+                                <h3 class="title">Visítanos o llámanos</h3>
+                                <p>
+                                    Puedes encontrarnos en nuestra oficina o comunicarte por 
+                                    teléfono para resolver tus dudas, coordinar una reunión o recibir asesoría directa.
+                                </p>
                             </div>
                             <div class="contact-list">
                                 <div class="list-item">
@@ -84,9 +94,9 @@
                                         <i class="fa-sharp fa-solid fa-phone"></i>
                                     </div>
                                     <div class="content">
-                                        <h4 class="title">Phone Number & Email</h4>
-                                        <span><a href="tel:+65485965789">(+65) - 48596 - 5789</a></span>
-                                        <span><a href="mailto:hello@edcare.com">hello@edcare.com</a></span>
+                                        <h4 class="title">Número de teléfono y correo electrónico</h4>
+                                        <span><a href="tel:+65485965789">(+51) 990 906 405</a></span>
+                                        <span><a href="mailto:contacto@estudiohorizonte.com">contacto@estudiohorizonte.com</a></span>
                                     </div>
                                 </div>
                                 <div class="list-item">
@@ -94,7 +104,7 @@
                                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                                     </div>
                                     <div class="content">
-                                        <h4 class="title">Our Office Address</h4>
+                                        <h4 class="title">Nuestra dirección de oficina</h4>
                                         <p>2690 Hilton Street Victoria Road, <br>New York, Canada</p>
                                     </div>
                                 </div>
@@ -103,9 +113,9 @@
                                         <i class="fa-sharp fa-solid fa-clock"></i>
                                     </div>
                                     <div class="content">
-                                        <h4 class="title">Official Work Time</h4>
-                                        <span>Monday - Friday: 09:00 - 20:00</span>
-                                        <span>Sunday & Saturday: 10:30 - 22:00</span>
+                                        <h4 class="title">Horario</h4>
+                                        <span>Lunes - Viernes: 09:00 - 20:00</span>
+                                        <span>Sábado: 09:00 - 13:00</span>
                                     </div>
                                 </div>
                             </div>
