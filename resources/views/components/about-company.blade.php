@@ -5,8 +5,8 @@
                 <div class="row about-wrap-8">
                     <div class="col-lg-7">
                         <div class="about-img-wrap-8">
-                            <div class="about-img-1"><img src="themes/webpage/assets/img/new-update/about-img-1.png" alt="about"></div>
-                            <div class="about-img-2"><img src="themes/webpage/assets/img/new-update/about-img-2.png" alt="about"></div>
+                            <div class="about-img-1"><img src="themes/webpage/assets/img/new-update/about-img-1.jpg" alt="about"></div>
+                            <div class="about-img-2"><img src="themes/webpage/assets/img/new-update/about-img-2.jpg" alt="about"></div>
                             <div class="round-shape"></div>
                         </div>
                     </div>

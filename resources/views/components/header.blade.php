@@ -12,8 +12,8 @@
                         </div>
                         <div class="top-bar-right">
                             <div class="register-box">
-                                <a href="" style="padding: 0px 5px;"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                                <a href="" style="padding: 0px 5px;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/estudiohorizonte.pe" style="padding: 0px 5px;"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/estudiohorizonte.pe/" style="padding: 0px 5px;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>

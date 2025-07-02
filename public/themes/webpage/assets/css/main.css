@@ -5922,16 +5922,17 @@ START: Course CSS
      object-fit: cover;
 }
 .course-item .course-content .course-author-box .course-author .author-info .name {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
   margin-bottom: 0;
-  line-height: 1;
+  line-height: 0.5;
 }
 .course-item .course-content .course-author-box .course-author .author-info span {
   color: var(--ed-color-theme-primary);
   font-size: 13px;
-  font-weight: 400;
-  line-height: 1;
+  font-weight: 500;
+  line-height: 0.5;
 }
 .course-item .course-content .course-author-box .course-review li {
   display: inline-flex;
@@ -6158,8 +6159,10 @@ START: Course CSS
   border-radius: 10px;
 }
 .course-details-content .course-details-img {
-  height: 500px;
-  padding: 30px;
+  /* height: 500px; */
+  height: auto;
+  /* padding: 30px; */
+  padding: 10px;
   padding-top: 0;
 }
 @media only screen and (max-width: 767px) {
