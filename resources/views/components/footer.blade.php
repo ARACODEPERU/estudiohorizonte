@@ -17,7 +17,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widget">
                                 <h3 class="widget-header">¡Póngase en contacto con nosotros!</h3>
-                                <p class="mb-30">Fusce varius, dolor tempor interdum tristiquei bibendum.</p>
+                                <p class="mb-30">¿Tienes dudas? Escríbenos, estamos para ayudarte.</p>
                                 <div class="footer-contact">
                                     <span class="number"><i class="fa fa-phone"></i>
                                         <a href="">(51) 990906405</a>
@@ -25,10 +25,9 @@
                                     <a href="mailto:contacto@midominio.com" class="mail">contacto@midominio.com</a>
                                 </div>
                                 <ul class="footer-social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/estudiohorizonte.pe"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/estudiohorizonte.pe/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@estudiohorizonte/featured"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,10 +35,10 @@
                             <div class="footer-widget widget-2">
                                 <h3 class="widget-header">Navegar</h3>
                                 <ul class="footer-list">
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="">Nosotros</a></li>
-                                    <li><a href="">Cursos</a></li>
-                                    <li><a href="">Contacto</a></li>
+                                    <li><a href="{{ route('index_main') }}">Home</a></li>
+                                    <li><a href="{{ route('web_about') }}">Nosotros</a></li>
+                                    <li><a href="{{ route('web_courses') }}">Formación Continua</a></li>
+                                    <li><a href="{{ route('web_contact_us') }}">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>

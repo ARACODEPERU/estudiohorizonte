@@ -4,7 +4,10 @@
             <div class="container">
                 <div class="section-heading text-center">
                     <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
-                        <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                        <span class="heading-icon">
+                            {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
+                            <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
+                        </span>
                         Mira nuestro último live
                     </h4>
                     <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">

@@ -1086,7 +1086,11 @@
                 <div class="feature-course-top heading-space">
                     <div class="section-heading mb-0">
                         <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
-                            <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Nuevos Ingresos
+                            <span class="heading-icon">
+                                {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
+                                <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
+                            </span>
+                            Nuevos Ingresos
                         </h4>
                         <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
                             𝐈𝐈 𝐅𝐨𝐫𝐨 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐜𝐢𝐨𝐧𝐚𝐥 𝐝𝐞 𝐀𝐫𝐪𝐮𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐚 𝐲 𝐔𝐫𝐛𝐚𝐧𝐢𝐬𝐦𝐨 "𝐒𝐞𝐧𝐭𝐢𝐫 𝐥𝐚 𝐀𝐫𝐪𝐮𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐚"

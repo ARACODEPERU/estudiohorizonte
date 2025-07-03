@@ -13,7 +13,8 @@
                             <div class="section-heading mb-30">
                                 <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
                                     <span class="heading-icon">
-                                        <i class="fa-sharp fa-solid fa-bolt"></i>
+                                        {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
+                                        <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
                                     </span>
                                     Únete a nosotros
                                 </h4>

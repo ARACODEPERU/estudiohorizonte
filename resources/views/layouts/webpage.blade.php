@@ -11,11 +11,11 @@
         <title>Estudio Horizonte</title>
 
         <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" type="image/x-icon" href="themes/webpage/assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/webpage/assets/img/favicon.png') }}">
 
         <!-- CSS here -->
-        <link rel="stylesheet" href="themes/webpage/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/fontawesome.min.css') }}">
         <link rel="stylesheet" href="themes/webpage/assets/css/venobox.min.css">
         <link rel="stylesheet" href="themes/webpage/assets/css/animate.min.css">
         <link rel="stylesheet" href="themes/webpage/assets/css/keyframe-animation.css">

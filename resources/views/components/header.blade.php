@@ -14,6 +14,7 @@
                             <div class="register-box">
                                 <a href="https://www.facebook.com/estudiohorizonte.pe" style="padding: 0px 5px;"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                                 <a href="https://www.instagram.com/estudiohorizonte.pe/" style="padding: 0px 5px;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/@estudiohorizonte/featured" style="padding: 0px 5px;"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
