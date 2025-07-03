@@ -6,7 +6,10 @@
                         <div class="top-bar-left">
                             <ul class="top-bar-list">
                                 <li><i class="fa fa-phone"></i><a href="">(+51) 990 906 405</a></li>
-                                <li><i class="fa fa-location-dot"></i><span>Chimbote</span></li>
+                                <li>
+                                    <i class="fa fa-location-dot"></i>
+                                    <span>Jr. Unión 959 Mz E Lote 24 Magdalena Nueva, Chimbote</span>
+                                </li>
                                 <li><i class="fa fa-clock"></i><span>Lun - Viernes: 9:00 - 20:00</span></li>
                             </ul>
                         </div>

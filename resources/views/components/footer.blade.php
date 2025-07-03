@@ -56,15 +56,17 @@
                             <div class="footer-widget">
                                 <h3 class="widget-header">Últimos Cursos</h3>
                                 <div class="sidebar-post mb-20">
-                                    <img src="themes/webpage/assets/img/images/footer-post-1.png" alt="post">
+                                    <img src="{{ asset('themes/webpage/assets/img/courses/course_01.jpg') }}" alt="post" style="width: 100%; height: auto;">
                                     <div class="post-content">
-                                        <h3 class="title"><a href="#">Título del curso</a></h3>
+                                        <h3 class="title">
+                                            <a href="{{ route('web_courses') }}">𝐈𝐈 𝐅𝐨𝐫𝐨 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐜𝐢𝐨𝐧𝐚𝐥 𝐝𝐞 𝐀𝐫𝐪𝐮𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐚 𝐲 𝐔𝐫𝐛𝐚𝐧𝐢𝐬𝐦𝐨 "𝐒𝐞𝐧𝐭𝐢𝐫 𝐥𝐚 𝐀𝐫𝐪𝐮𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐚"</a>
+                                        </h3>
                                         <ul class="post-meta">
-                                            <li><i class="fa fa-calendar"></i>20 April, 2025</li>
+                                            <li><i class="fa fa-calendar"></i>Foro</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="sidebar-post">
+                                {{-- <div class="sidebar-post">
                                     <img src="themes/webpage/assets/img/images/footer-post-2.png" alt="post">
                                     <div class="post-content">
                                         <h3 class="title"><a href="#">Título del curso</a></h3>
@@ -72,7 +74,7 @@
                                             <li><i class="fa fa-calendar"></i>20 April, 2025</li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -82,7 +84,7 @@
                 <div class="container">
                     <div class="copyright-content">
                         <p>
-                            Copyright © 2025 - Todos Los Derechos Reservados a <b>Estudio Horizonte</b>. 
+                            Copyright © 2025 - Todos Los Derechos Reservados a <b>Estudio Horizonte</b>.
                             | Desarrollado por <b><a href="">Aracode Smart Solutions</a></b>
                         </p>
                     </div>

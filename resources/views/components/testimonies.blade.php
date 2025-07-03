@@ -87,30 +87,8 @@
                                 </div>
                                 <div class="testi-bottom">
                                     <div class="author-info">
-                                        <h4 class="name">David H. Smith</h4>
-                                        <span>Arq. Hatsumi Cruz Esquivel</span>
-                                    </div>
-                                    {{-- <ul class="testi-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul> --}}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-item-2">
-                                <div class="testi-top-content">
-                                    <div class="testi-thumb"><img src="themes/webpage/assets/img/images/testi-author-2.png" alt="testi"></div>
-                                    <p>"The course exceeded my expectations in every way. The materials were well-organized and easy to follow, making even the most complex concepts understandable. “</p>
-                                </div>
-                                <div class="testi-bottom">
-                                    <div class="author-info">
-                                        <h4 class="name">Alex Hailey</h4>
-                                        <span>IT Student</span>
+                                        <h4 class="name">Arq. Hatsumi Cruz Esquivel</h4>
+                                        <span>Chimbote - Perú</span>
                                     </div>
                                     {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>

@@ -287,13 +287,60 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="testi-item-3">
-                                            <h3 class="title">Interactive Learning Experience</h3>
-                                            <p>"I've been thoroughly impressed with how engaging and interactive the courses are on this. The use of multimedia, quizzes, and live sessions makes learning enjoyable and keeps me motivated.”</p>
+                                            {{-- <h3 class="title">Interactive Learning Experience</h3> --}}
+                                            <p>
+                                                “ESTUDIO HORIZONTE ha sido fundamental en mi crecimiento profesional. Sus capacitaciones de 
+                                                arquitectura y urbanismo han sido dinámicos, innovadores y sobre todo, aplicables a la vida real. 
+                                                Me siento afortunado de haber podido aprender de los docentes, muchos de ellos reconocidos profesores 
+                                                en universidades prestigiosas como la PUCP, UPC, UNI y ULima.”
+                                            </p>
                                             <div class="testi-author">
                                                 <div class="testi-author-img">
-                                                    <img src="themes/webpage/assets/img/images/testi-author-3.png" alt="testi">
+                                                    <img src="{{ asset('themes/webpage/assets/img/testimonial/Noemi_Aguilar.jpg') }}" alt="testi">
                                                 </div>
-                                                <h4 class="name">Markus Adina <span>Writer</span></h4>
+                                                <h4 class="name">
+                                                    Arq. Noemi Aguilar Blas <br>
+                                                    <span>Trujillo - Perú</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-item-3">
+                                            {{-- <h3 class="title">Interactive Learning Experience</h3> --}}
+                                            <p>
+                                                “La capacitación que recibí en ESTUDIO HORIZONTE sobre paisaje y territorio fue clave para 
+                                                desarrollar mi proyecto de fin de carrera. La pasión y dedicación de los instructores se nota en cada 
+                                                clase. ¡Totalmente recomendado!"
+                                            </p>
+                                            <div class="testi-author">
+                                                <div class="testi-author-img">
+                                                    <img src="{{ asset('themes/webpage/assets/img/testimonial/Juan_Atencia.jpg') }}" alt="testi">
+                                                </div>
+                                                <h4 class="name">
+                                                    Arq. Juan Atencia Alvis <br>
+                                                    <span>Bogotá - Colombia</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-item-3">
+                                            {{-- <h3 class="title">Interactive Learning Experience</h3> --}}
+                                            <p>
+                                                "ESTUDIO HORIZONTE no solo te brinda conocimientos técnicos de alta calidad, sino que 
+                                                también te inspira a pensar de manera creativa y a cuestionar lo establecido. Ha sido una 
+                                                experiencia transformadora para mi carrera y mi perspectiva sobre el diseño y 
+                                                la arquitectura."
+                                            </p>
+                                            <div class="testi-author">
+                                                <div class="testi-author-img">
+                                                    <img src="{{ asset('themes/webpage/assets/img/testimonial/Hatzumi.jpg') }}" alt="testi">
+                                                </div>
+                                                <h4 class="name">
+                                                    Arq. Hatsumi Cruz Esquivel <br>
+                                                    <span>Chimbote - Perú</span>
+                                                </h4>
                                             </div>
                                         </div>
                                     </div>

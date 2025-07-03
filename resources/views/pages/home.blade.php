@@ -58,7 +58,7 @@
         <x-video-free />
         <!-- ./ video-section -->
 
-        <x-courses-recomendation />
+        {{-- <x-courses-recomendation /> --}}
         <!-- ./ course-section -->
 
         <x-choose-us />
