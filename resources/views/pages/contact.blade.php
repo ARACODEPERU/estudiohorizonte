@@ -112,7 +112,7 @@
                                     </div>
                                     <div class="content">
                                         <h4 class="title">Nuestra dirección de oficina</h4>
-                                        <p>2690 Hilton Street Victoria Road, <br>New York, Canada</p>
+                                        <p>Jr. Unión 959 Mz E Lote 24 Magdalena Nueva, Chimbote</p>
                                     </div>
                                 </div>
                                 <div class="list-item">
