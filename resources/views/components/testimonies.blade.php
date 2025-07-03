@@ -4,9 +4,11 @@
                 <div class="section-heading text-center">
                     <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
                         <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
-                        Nuestras Testimonios
+                        Testimonios
                     </h4>
-                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Feedback’s From Our Student</h2>
+                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
+                        Transformando vidas a través de la educación
+                    </h2>
                 </div>
                 <div class="testi-carousel swiper">
                     <div class="swiper-wrapper">
@@ -21,14 +23,14 @@
                                         <h4 class="name">David H. Smith</h4>
                                         <span>IT Student</span>
                                     </div>
-                                    <ul class="testi-review">
+                                    {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li class="point">(4.7)</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
@@ -43,14 +45,14 @@
                                         <h4 class="name">Alex Hailey</h4>
                                         <span>IT Student</span>
                                     </div>
-                                    <ul class="testi-review">
+                                    {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li class="point">(4.7)</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
@@ -65,14 +67,14 @@
                                         <h4 class="name">David H. Smith</h4>
                                         <span>IT Student</span>
                                     </div>
-                                    <ul class="testi-review">
+                                    {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li class="point">(4.7)</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
@@ -87,14 +89,14 @@
                                         <h4 class="name">Alex Hailey</h4>
                                         <span>IT Student</span>
                                     </div>
-                                    <ul class="testi-review">
+                                    {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
                                         <li class="point">(4.7)</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
