@@ -18,13 +18,20 @@
                         <div class="swiper-slide">
                             <div class="testi-item-2">
                                 <div class="testi-top-content">
-                                    <div class="testi-thumb"><img src="themes/webpage/assets/img/images/testi-author-1.png" alt="testi"></div>
-                                    <p>"The course exceeded my expectations in every way. The materials were well-organized and easy to follow, making even the most complex concepts understandable. “</p>
+                                    <div class="testi-thumb">
+                                        <img src="{{ asset('themes/webpage/assets/img/testimonial/Noemi_Aguilar.jpg') }}" alt="testi">
+                                    </div>
+                                    <p>
+                                        “ESTUDIO HORIZONTE ha sido fundamental en mi crecimiento profesional. Sus capacitaciones de 
+                                        arquitectura y urbanismo han sido dinámicos, innovadores y sobre todo, aplicables a la vida real. 
+                                        Me siento afortunado de haber podido aprender de los docentes, muchos de ellos reconocidos profesores 
+                                        en universidades prestigiosas como la PUCP, UPC, UNI y ULima.”
+                                    </p>
                                 </div>
                                 <div class="testi-bottom">
                                     <div class="author-info">
-                                        <h4 class="name">David H. Smith</h4>
-                                        <span>IT Student</span>
+                                        <h4 class="name">Arq. Noemi Aguilar Blas</h4>
+                                        <span>Trujillo - Perú</span>
                                     </div>
                                     {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
@@ -40,13 +47,19 @@
                         <div class="swiper-slide">
                             <div class="testi-item-2">
                                 <div class="testi-top-content">
-                                    <div class="testi-thumb"><img src="themes/webpage/assets/img/images/testi-author-2.png" alt="testi"></div>
-                                    <p>"The course exceeded my expectations in every way. The materials were well-organized and easy to follow, making even the most complex concepts understandable. “</p>
+                                    <div class="testi-thumb">
+                                        <img src="{{ asset('themes/webpage/assets/img/testimonial/Juan_Atencia.jpg') }}" alt="testi">
+                                    </div>
+                                    <p>
+                                        “La capacitación que recibí en ESTUDIO HORIZONTE sobre paisaje y territorio fue clave para 
+                                        desarrollar mi proyecto de fin de carrera. La pasión y dedicación de los instructores se nota en cada 
+                                        clase. ¡Totalmente recomendado!"
+                                    </p>
                                 </div>
                                 <div class="testi-bottom">
                                     <div class="author-info">
-                                        <h4 class="name">Alex Hailey</h4>
-                                        <span>IT Student</span>
+                                        <h4 class="name">Arq. Juan Atencia Alvis</h4>
+                                        <span>Bogotá - Colombia</span>
                                     </div>
                                     {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>
@@ -62,13 +75,20 @@
                         <div class="swiper-slide">
                             <div class="testi-item-2">
                                 <div class="testi-top-content">
-                                    <div class="testi-thumb"><img src="themes/webpage/assets/img/images/testi-author-1.png" alt="testi"></div>
-                                    <p>"The course exceeded my expectations in every way. The materials were well-organized and easy to follow, making even the most complex concepts understandable. “</p>
+                                    <div class="testi-thumb">
+                                        <img src="{{ asset('themes/webpage/assets/img/testimonial/Hatzumi.jpg') }}" alt="testi">
+                                    </div>
+                                    <p>
+                                        "ESTUDIO HORIZONTE no solo te brinda conocimientos técnicos de alta calidad, sino que 
+                                        también te inspira a pensar de manera creativa y a cuestionar lo establecido. Ha sido una 
+                                        experiencia transformadora para mi carrera y mi perspectiva sobre el diseño y 
+                                        la arquitectura."
+                                    </p>
                                 </div>
                                 <div class="testi-bottom">
                                     <div class="author-info">
                                         <h4 class="name">David H. Smith</h4>
-                                        <span>IT Student</span>
+                                        <span>Arq. Hatsumi Cruz Esquivel</span>
                                     </div>
                                     {{-- <ul class="testi-review">
                                         <li><i class="fa-sharp fa-solid fa-star"></i></li>

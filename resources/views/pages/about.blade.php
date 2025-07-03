@@ -366,6 +366,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="cat-btn text-center mt-40 wow fade-in-bottom" data-wow-delay="500ms">
+                    <a target="_blank" href="https://www.youtube.com/@estudiohorizonte" class="ed-primary-btn">Ver más contenido</a>
+                </div>
             </div>
         </section>
         <!-- ./ video-section -->

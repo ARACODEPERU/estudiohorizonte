@@ -1103,7 +1103,7 @@
                     <div class="col-xl-9 col-lg-12">
                         <div class="course-details-content">
                             <div class="course-details-img">
-                                <img src="themes/webpage/assets/img/courses/course_01.jpg" alt="course" style="width: 100%;">
+                                <img src="{{ asset('themes/webpage/assets/img/courses/course_01.jpg') }}" alt="course" style="width: 100%;">
                             </div>
                             <div class="details-inner">
                                 {{-- <ul class="details-meta">
@@ -1276,7 +1276,7 @@
                                                 </div>
                                                 <div class="review-item">
                                                     <div class="review-thumb">
-                                                        <img src="themes/webpage/assets/img/teacher/Liliana_Miranda.jpg" alt="img">
+                                                        <img src="themes/webpage/assets/img/teacher/Cynthia_Seinfeld.jpg" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <div class="content-top">
@@ -1612,10 +1612,10 @@
                         <div class="course-sidebar price-box">
                             <i class="fa-solid fa-tags"></i> "Certificado disponible por un costo adicional (opcional)."
                             <h4 class="price">
-                                S/ 90.00 
+                                S/ 100.00 
                                 {{-- <span>25% off</span> --}}
                             </h4>
-                            <a href="" class="ed-primary-btn">
+                            <a href="https://wa.link/g3i7et" class="ed-primary-btn">
                                 <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 18px;"></i>
                                 &nbsp; Adquirir
                             </a>
