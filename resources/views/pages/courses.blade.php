@@ -21,6 +21,7 @@
         </section>
         <!-- ./ page-header -->
 
+
         <section class="feature-course bg-white pt-120 pb-120">
             {{-- <div class="container">
                 <div class="section-heading text-center">
@@ -276,9 +277,6 @@
                     </div>
                 </div>
             </div> --}}
-
-
-
             
             <div class="container">
                 <div class="feature-course-top heading-space">

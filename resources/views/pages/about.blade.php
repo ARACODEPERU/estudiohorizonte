@@ -73,7 +73,10 @@
             <div class="container">
                 <div class="section-heading text-center">
                     <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
-                        <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                        <span class="heading-icon">
+                            {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
+                            <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
+                        </span>
                         Nuestra Esencia y Visión
                     </h4>
                     <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
@@ -263,7 +266,10 @@
                         <div class="testi-left-content white-content">
                             <div class="section-heading mb-20 white-content">
                                 <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
-                                    <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                                    <span class="heading-icon">
+                                        {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
+                                        <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
+                                    </span>
                                     Testimonios
                                 </h4>
                                 <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
@@ -308,7 +314,10 @@
             <div class="container">
                 <div class="section-heading text-center">
                     <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
-                        <span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>
+                        <span class="heading-icon">
+                            {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
+                            <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
+                        </span>
                         Formación Continua
                     </h4>
                     <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
