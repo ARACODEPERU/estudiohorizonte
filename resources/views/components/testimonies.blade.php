@@ -1,5 +1,5 @@
 <div>
-    <section class="testimonial-section-2 testi-8 pt-120 pb-20">
+    <section class="testimonial-section-2 testi-8 pt-120">
             <div class="container">
                 <div class="section-heading text-center">
                     <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">

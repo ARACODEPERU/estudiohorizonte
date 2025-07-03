@@ -5,7 +5,7 @@
                 <div class="shape shape-2"><img src="themes/webpage/assets/img/shapes/sponsor-2.png" alt="shape"></div>
             </div>
             <div class="container">
-                <div class="sponsor-carousel swiper">
+                {{-- <div class="sponsor-carousel swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="sponsor-item">
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
     </div>
 </div>
