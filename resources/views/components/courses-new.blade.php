@@ -1622,18 +1622,17 @@
                             {{-- <a href="cart.html" class="ed-primary-btn buy-btn">Buy Now</a> --}}
                         </div>
                         <div class="course-sidebar sticky-widget">
-                            {{-- <h4 class="sidebar-title">Course Information</h4>
-                            <ul class="course-sidebar-list">
-                                <li><i class="fa-regular fa-house-chimney"></i>Instructor: <span>Kevin Perry</span></li>
-                                <li><i class="fa-regular fa-book"></i>Lessons: <span>8</span></li>
-                                <li><i class="fa-regular fa-clock"></i>Duration: <span>15h 30m 36s</span></li>
-                                <li><i class="fa-regular fa-tag"></i>Course level: <span>Beginners</span></li>
-                                <li><i class="fa-regular fa-globe"></i>Language: <span>English</span></li>
-                                <li><i class="fa-regular fa-puzzle-piece"></i>Quizzes: <span>04</span></li>
-                            </ul>
-                            <div class="share-btn">
-                                <button class="ed-primary-btn"><i class="fa-regular fa-share-nodes"></i>Share This Course</button>
-                            </div> --}}
+                            <h4 class="sidebar-title">News</h4>
+                            <a target="_blank" href="https://arquitectura.pucp.edu.pe/actividades/noticias/docentes-arquitectura-pucp-en-el-2o-simposio-nacional-de-arquitectura-ciudad-y-territorio/?fbclid=IwY2xjawLTyuZleHRuA2FlbQIxMQBicmlkETFkNUg2SlVPVzZtR240S29xAR4wbHGoIlnmquPMGgMX2e2raYDGVdtZQP0zKlVBR2CvFmiWFscyQdJuKv5YXw_aem_8uZZcoAZjUltVuqdFdnK7A">
+                                <img src="{{ asset('themes/webpage/assets/img/news.jpeg') }}" alt="">
+                            </a>
+                            <p>
+                                <a target="_blank" href="https://arquitectura.pucp.edu.pe/actividades/noticias/docentes-arquitectura-pucp-en-el-2o-simposio-nacional-de-arquitectura-ciudad-y-territorio/?fbclid=IwY2xjawLTyuZleHRuA2FlbQIxMQBicmlkETFkNUg2SlVPVzZtR240S29xAR4wbHGoIlnmquPMGgMX2e2raYDGVdtZQP0zKlVBR2CvFmiWFscyQdJuKv5YXw_aem_8uZZcoAZjUltVuqdFdnK7A">
+                                    <b>
+                                        Docentes Arquitectura PUCP fueron parte del 2º Simposio Nacional de Arquitectura, Ciudad y Territorio
+                                    </b>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
