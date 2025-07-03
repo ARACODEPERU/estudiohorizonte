@@ -23,7 +23,7 @@
                                 </h2>
                             </div>
                             <p class="mb-30 wow fade-in-bottom" data-wow-delay="500ms">
-                                En EdCare buscamos profesionales apasionados por enseñar y compartir su experiencia. Al convertirte en instructor, 
+                                En <b>Estudio Horizonte</b> buscamos profesionales apasionados por enseñar y compartir su experiencia. Al convertirte en instructor, 
                                 formarás parte de una comunidad comprometida con la educación de calidad, flexible y accesible.
                             </p>
                             <div class="content-btn wow fade-in-bottom" data-wow-delay="600ms">
