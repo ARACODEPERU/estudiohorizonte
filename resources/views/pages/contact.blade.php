@@ -6,7 +6,7 @@
         <!-- header-area-start -->
         <x-header/>
         <!-- /.Main Header -->
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <section class="page-header" style="padding: 60px;">
             <div class="bg-img">
