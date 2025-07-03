@@ -70,7 +70,7 @@
         <x-testimonies />
         <!-- ./ testimonial-section -->
 
-        <x-agreements />
+        {{-- <x-agreements /> --}}
         <!-- ./ sponsor-section -->
 
         {{-- <section class="blog-section pt-120 pb-120">
