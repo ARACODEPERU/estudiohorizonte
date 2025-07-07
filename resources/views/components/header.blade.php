@@ -54,7 +54,7 @@
                                     <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
                                     <span class="number">0</span>
                                 </div> --}}
-                                <a href="https://horizonte.aracodeperu.com/login" class="ed-primary-btn header-btn">Campus Virtual</a>
+                                <a href="https://estudiohorizonte.org/login" class="ed-primary-btn header-btn">Campus Virtual</a>
                                 <div class="header-logo d-none d-lg-none">
                                     <a href="">
                                         <img src="themes/webpage/assets/img/logo/logo-1.png" alt="Logo">
