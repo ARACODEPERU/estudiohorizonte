@@ -22,7 +22,7 @@
                                     <span class="number"><i class="fa fa-phone"></i>
                                         <a href="">(51) 990906405</a>
                                     </span>
-                                    <a href="mailto:contacto@midominio.com" class="mail">contacto@midominio.com</a>
+                                    <a href="mailto:contacto@estudiohorizonte.org" class="mail">contacto@estudiohorizonte.org</a>
                                 </div>
                                 <ul class="footer-social">
                                     <li><a href="https://www.facebook.com/estudiohorizonte.pe"><i class="fab fa-facebook-f"></i></a></li>
@@ -47,7 +47,7 @@
                                 <h3 class="widget-header">Legal</h3>
                                 <ul class="footer-list">
                                     <li><a href="">Calidad</a></li>
-                                    <li><a href="">Privacidad</a></li>
+                                    <li><a href="{{ route('web_privacy_policies') }}">Privacidad</a></li>
                                     <li><a href="">Libro de reclamaciones</a></li>
                                 </ul>
                             </div>
