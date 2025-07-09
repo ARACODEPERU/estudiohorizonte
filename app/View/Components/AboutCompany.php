@@ -17,7 +17,7 @@ class AboutCompany extends Component
     protected $abobody;
     public function __construct()
     {
-        $this->aboimagen = CmsSection::where('component_id', 'benefits_6')
+        $this->aboimagen = CmsSection::where('component_id', 'about_imagen_section_7')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -27,7 +27,7 @@ class AboutCompany extends Component
             ->orderBy('cms_section_items.position')
             ->get();
             
-        $this->aboheader = CmsSection::where('component_id', 'benefits_6')
+        $this->aboheader = CmsSection::where('component_id', 'about_header_section_8')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -37,7 +37,7 @@ class AboutCompany extends Component
             ->orderBy('cms_section_items.position')
             ->get();
             
-        $this->abobody = CmsSection::where('component_id', 'benefits_6')
+        $this->abobody = CmsSection::where('component_id', 'about_body_section_9')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
