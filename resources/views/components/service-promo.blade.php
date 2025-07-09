@@ -39,7 +39,7 @@
                             <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-5.png" alt="icon">
                         </div>
                         <div class="content">
-                            <h4 class="title">Contenido interactivo de alto valor</h4>
+                            <h4 class="title">Contenido interactivo 24/7</h4>
                         </div>
                     </div>
                 </div>
