@@ -3,38 +3,43 @@
             <div class="service-promo-container container">
                 <div class="service-promo-wrap">
                     <div class="service-promo-item">
-                        <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-1.png" alt="icon"></div>
+                        <div class="icon">
+                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-1.png" alt="icon">
+                        </div>
                         <div class="content">
                             <h4 class="title">Aprenda nuevas habilidades</h4>
-                            <span>Video cursos.</span>
                         </div>
                     </div>
                     <div class="service-promo-item">
-                        <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-2.png" alt="icon"></div>
+                        <div class="icon">
+                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-2.png" alt="icon">
+                        </div>
                         <div class="content">
-                            <h4 class="title">Tutores profesionales en la materia</h4>
-                            <span>Video cursos.</span>
+                            <h4 class="title">Tutores de gran trayectoria</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
-                        <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-3.png" alt="icon"></div>
+                        <div class="icon">
+                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-3.png" alt="icon">
+                        </div>
                         <div class="content">
-                            <h4 class="title">Programas de titulación en modalidad virtual</h4>
-                            <span>Video courses.</span>
+                            <h4 class="title">Titulación en modalidad virtual</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
-                        <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-4.png" alt="icon"></div>
+                        <div class="icon">
+                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-4.png" alt="icon">
+                        </div>
                         <div class="content">
-                            <h4 class="title">Horarios flexibles</h4>
-                            <span>Video courses.</span>
+                            <h4 class="title">Horarios que se adaptan a ti</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
-                        <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-5.png" alt="icon"></div>
+                        <div class="icon">
+                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-5.png" alt="icon">
+                        </div>
                         <div class="content">
-                            <h4 class="title">Contenido interactivo</h4>
-                            <span>Video courses.</span>
+                            <h4 class="title">Contenido interactivo de alto valor</h4>
                         </div>
                     </div>
                 </div>
