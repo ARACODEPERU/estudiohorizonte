@@ -5,15 +5,36 @@ namespace App\View\Components;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Modules\CMS\Entities\CmsSection;
 
 class Category extends Component
 {
     /**
      * Create a new component instance.
      */
+    protected $catheader;
+    protected $catbody;
     public function __construct()
     {
-        //
+        $this->catheader = CmsSection::where('component_id', 'category_header_section_4')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $this->catbody = CmsSection::where('component_id', 'category_body_section_5')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
     }
 
     /**
@@ -21,6 +42,9 @@ class Category extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.category');
+        return view('components.category', [
+            'catheader' => $this->catheader,
+            'catbody' => $this->catbody
+        ]);
     }
 }
