@@ -5,21 +5,21 @@
                     <div class="service-promo-item">
                         <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-1.png" alt="icon"></div>
                         <div class="content">
-                            <h4 class="title">Aprenda habilidades con más de 120k+</h4>
+                            <h4 class="title">Aprenda nuevas habilidades</h4>
                             <span>Video cursos.</span>
                         </div>
                     </div>
                     <div class="service-promo-item">
                         <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-2.png" alt="icon"></div>
                         <div class="content">
-                            <h4 class="title">Tutor profesional</h4>
+                            <h4 class="title">Tutores profesionales en la materia</h4>
                             <span>Video cursos.</span>
                         </div>
                     </div>
                     <div class="service-promo-item">
                         <div class="icon"><img src="themes/webpage/assets/img/new-update/icon/service-promo-3.png" alt="icon"></div>
                         <div class="content">
-                            <h4 class="title">Títulos en línea</h4>
+                            <h4 class="title">Programas de titulación en modalidad virtual</h4>
                             <span>Video courses.</span>
                         </div>
                     </div>
