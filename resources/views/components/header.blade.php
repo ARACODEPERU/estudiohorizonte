@@ -5,19 +5,22 @@
                     <div class="top-bar-inner">
                         <div class="top-bar-left">
                             <ul class="top-bar-list">
-                                <li><i class="fa fa-phone"></i><a href="">(+51) 990 906 405</a></li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    {{ $header[1]->content }}
+                                </li>
                                 <li>
                                     <i class="fa fa-location-dot"></i>
-                                    <span>Jr. Unión 959 Mz E Lote 24 Magdalena Nueva, Chimbote</span>
+                                    <span>{{ $header[2]->content }}</span>
                                 </li>
-                                <li><i class="fa fa-clock"></i><span>Lun - Viernes: 9:00 - 20:00</span></li>
+                                <li><i class="fa fa-clock"></i><span>{{ $header[3]->content }}</span></li>
                             </ul>
                         </div>
                         <div class="top-bar-right">
                             <div class="register-box">
-                                <a href="https://www.facebook.com/estudiohorizonte.pe" style="padding: 0px 5px;"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                                <a href="https://www.instagram.com/estudiohorizonte.pe/" style="padding: 0px 5px;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                                <a href="https://www.youtube.com/@estudiohorizonte/featured" style="padding: 0px 5px;"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                                <a href="{{ $header[4]->content }}" style="padding: 0px 5px;"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="{{ $header[5]->content }}" style="padding: 0px 5px;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="{{ $header[6]->content }}" style="padding: 0px 5px;"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -27,8 +30,8 @@
                 <div class="container">
                     <div class="primary-header-inner">
                         <div class="header-logo d-lg-block">
-                            <a href="">
-                                <img src="themes/webpage/assets/img/logo/logo-1.png" alt="Logo">
+                            <a href="{{ route('index_main') }}">
+                                <img src="{{ asset('storage/'.$header[0]->content) }}" alt="Logo">
                             </a>
                         </div>
                         <div class="header-menu-wrap">

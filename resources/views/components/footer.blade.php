@@ -17,17 +17,17 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widget">
                                 <h3 class="widget-header">¡Póngase en contacto con nosotros!</h3>
-                                <p class="mb-30">¿Tienes dudas? Escríbenos, estamos para ayudarte.</p>
+                                <p class="mb-30">{{ $footer[0]->content }}</p>
                                 <div class="footer-contact">
                                     <span class="number"><i class="fa fa-phone"></i>
-                                        <a href="">(51) 990906405</a>
+                                        <a href="">{{ $footer[1]->content }}</a>
                                     </span>
-                                    <a href="mailto:contacto@estudiohorizonte.org" class="mail">contacto@estudiohorizonte.org</a>
+                                    <a href="mailto:{{ $footer[2]->content }}" class="mail">{{ $footer[2]->content }}</a>
                                 </div>
                                 <ul class="footer-social">
-                                    <li><a href="https://www.facebook.com/estudiohorizonte.pe"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/estudiohorizonte.pe/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@estudiohorizonte/featured"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="{{ $footer[3]->content }}"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="{{ $footer[4]->content }}"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="{{ $footer[5]->content }}"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
