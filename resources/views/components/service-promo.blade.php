@@ -4,42 +4,42 @@
                 <div class="service-promo-wrap">
                     <div class="service-promo-item">
                         <div class="icon">
-                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-1.png" alt="icon">
+                            <img style="width: 50px;" src="{{ asset('storage/'.$beneficio[0]->content) }}" alt="icon">
                         </div>
                         <div class="content">
-                            <h4 class="title">Aprenda nuevas habilidades</h4>
+                            <h4 class="title">{{ $beneficio[1]->content }}</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
                         <div class="icon">
-                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-2.png" alt="icon">
+                            <img style="width: 50px;" src="{{ asset('storage/'.$beneficio[2]->content) }}" alt="icon">
                         </div>
                         <div class="content">
-                            <h4 class="title">Tutores de gran trayectoria</h4>
+                            <h4 class="title">{{ $beneficio[3]->content }}</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
                         <div class="icon">
-                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-3.png" alt="icon">
+                            <img style="width: 50px;" src="{{ asset('storage/'.$beneficio[4]->content) }}" alt="icon">
                         </div>
                         <div class="content">
-                            <h4 class="title">Titulación en modalidad virtual</h4>
+                            <h4 class="title">{{ $beneficio[5]->content }}</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
                         <div class="icon">
-                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-4.png" alt="icon">
+                            <img style="width: 50px;" src="{{ asset('storage/'.$beneficio[6]->content) }}" alt="icon">
                         </div>
                         <div class="content">
-                            <h4 class="title">Horarios que se adaptan a ti</h4>
+                            <h4 class="title">{{ $beneficio[7]->content }}</h4>
                         </div>
                     </div>
                     <div class="service-promo-item">
                         <div class="icon">
-                            <img style="width: 50px;" src="themes/webpage/assets/img/new-update/icon/service-promo-5.png" alt="icon">
+                            <img style="width: 50px;" src="{{ asset('storage/'.$beneficio[8]->content) }}" alt="icon">
                         </div>
                         <div class="content">
-                            <h4 class="title">Contenido interactivo 24/7</h4>
+                            <h4 class="title">{{ $beneficio[9]->content }}</h4>
                         </div>
                     </div>
                 </div>
