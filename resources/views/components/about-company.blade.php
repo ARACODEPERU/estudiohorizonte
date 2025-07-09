@@ -17,10 +17,11 @@
                                     {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
                                     <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
                                 </span>
-                                Acerca de la empresa
+                                {{ $aboheader[0]->content }}
                             </h4>
                             <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
-                                Arquitectura con <span>propósito</span>: descubre nuestra esencia
+                                {{-- Arquitectura con <span>propósito</span>: descubre nuestra esencia --}}
+                                {{ $aboheader[1]->content }}
                             </h2>
                         </div>
                         <div class="about-tab">
