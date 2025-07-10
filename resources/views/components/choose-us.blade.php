@@ -8,10 +8,10 @@
                             {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
                             <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
                         </span>
-                        Razón para elegir
+                        {{ $reasons[0]->content }}
                     </h4>
                     <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
-                        ¿Por qué elegirnos?
+                        {{ $reasons[1]->content }}
                     </h2>
                 </div>
                 <div class="row choose-us-wrap gy-lg-0 gy-4 justify-content-center">
@@ -24,11 +24,9 @@
                             </div>
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="content">
-                                <h4 class="title">Enfoque integral y sostenible:</h4>
+                                <h4 class="title">{{ $reasons[2]->content }}</h4>
                                 <p class="mb-0">
-                                    La empresa combina conocimientos y metodologías sociales, ambientales y técnicas para garantizar 
-                                    la alta calidad de sus proyectos, lo que garantiza un enfoque integral y sostenible en sus diseños y 
-                                    proyectos urbanos.
+                                    {{ $reasons[3]->content }}
                                 </p>
                             </div>
                         </div>
@@ -41,11 +39,9 @@
                             </div>
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="content">
-                                <h4 class="title">Experiencia y reconocimiento:</h4>
+                                <h4 class="title">{{ $reasons[4]->content }}</h4>
                                 <p class="mb-0">
-                                    Estudio Horizonte cuenta con experiencia en proyectos arquitectónicos y urbanos en distintas ciudades 
-                                    de la región, y su trabajo ha sido reconocido en concursos, exposiciones y eventos nacionales, lo que 
-                                    demuestra su capacidad y calidad en su trabajo.
+                                    {{ $reasons[5]->content }}
                                 </p>
                             </div>
                         </div>
@@ -58,11 +54,9 @@
                             </div>
                             <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="content">
-                                <h4 class="title">Compromiso con la transformación positiva:</h4>
+                                <h4 class="title">{{ $reasons[6]->content }}</h4>
                                 <p class="mb-0">
-                                    La empresa busca transformar relaciones, construir confianza, fortalecer la cultura, impulsar la innovación y 
-                                    recuperar los vínculos con la naturaleza, lo que refleja su compromiso con la transformación positiva de las 
-                                    ciudades y la sociedad.
+                                    {{ $reasons[7]->content }}
                                 </p>
                             </div>
                         </div>
