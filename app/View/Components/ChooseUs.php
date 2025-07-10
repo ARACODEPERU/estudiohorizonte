@@ -15,7 +15,7 @@ class ChooseUs extends Component
     protected $reasons;
     public function __construct()
     {
-        $this->reasons = CmsSection::where('component_id', 'reasons_11')
+        $this->reasons = CmsSection::where('component_id', 'razones_11')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
