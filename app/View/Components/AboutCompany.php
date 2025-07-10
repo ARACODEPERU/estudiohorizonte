@@ -17,7 +17,7 @@ class AboutCompany extends Component
     protected $abobody;
     public function __construct()
     {
-        $this->aboimagen = CmsSection::where('component_id', 'about_imagen_section_7')
+        $this->aboimagen = CmsSection::where('component_id', 'nosotros_imagen_seccion_7')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(

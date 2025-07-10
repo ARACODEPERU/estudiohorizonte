@@ -16,7 +16,7 @@ class Category extends Component
     protected $catbody;
     public function __construct()
     {
-        $this->catheader = CmsSection::where('component_id', 'category_header_section_4')
+        $this->catheader = CmsSection::where('component_id', 'categoria_encabezado_seccion_4')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -26,7 +26,7 @@ class Category extends Component
             ->orderBy('cms_section_items.position')
             ->get();
 
-        $this->catbody = CmsSection::where('component_id', 'category_body_section_5')
+        $this->catbody = CmsSection::where('component_id', 'categoria_contenido_seccion_5')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(

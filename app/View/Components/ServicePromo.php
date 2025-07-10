@@ -15,7 +15,7 @@ class ServicePromo extends Component
     protected $beneficio;
     public function __construct()
     {
-        $this->beneficio = CmsSection::where('component_id', 'benefits_6')
+        $this->beneficio = CmsSection::where('component_id', 'beneficios_6')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
