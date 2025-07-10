@@ -1516,7 +1516,7 @@
                                                 </div>
                                                 <div class="review-item">
                                                     <div class="review-thumb">
-                                                        <img src="themes/webpage/assets/img/teacher/Gonzalo_La_Hoz.jpg" alt="img">
+                                                        <img src="themes/webpage/assets/img/teacher/Cesar_Lee.jpg" alt="img">
                                                     </div>
                                                     <div class="content">
                                                         <div class="content-top">
