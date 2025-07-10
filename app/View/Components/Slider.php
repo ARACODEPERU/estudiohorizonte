@@ -15,7 +15,7 @@ class Slider extends Component
     protected $slider;
     public function __construct()
     {
-        $this->slider = CmsSection::where('component_id', 'slider_3')
+        $this->slider = CmsSection::where('component_id', 'portada_3')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
