@@ -19,7 +19,7 @@
                         <div class="shape-1"></div>
                     </div>
                     <div class="video-img">
-                        { !! $videofree[2]->content !! }
+                        {{ $videofree[2]->content }}
                         {{-- <img src="themes/webpage/assets/img/new-update/video-img.png" alt="video">
                         <div class="video-btn">
                             <a class="video-popup venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/JwC-Qx1lJso?feature=shared">
