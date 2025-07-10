@@ -8,10 +8,10 @@
                             {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
                             <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
                         </span>
-                        Mira nuestro último live
+                        {{ $videofree[0]->content }}
                     </h4>
                     <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
-                        Sesión 5: Patricia Ciriani + Kevin Malca + Rafael Zamora - II SINACT
+                        {{ $videofree[1]->content }}
                     </h2>
                 </div>
                 <div class="video-wrap wow fade-in-bottom" data-wow-delay="500ms" style="margin-top: -20px;">
@@ -19,7 +19,7 @@
                         <div class="shape-1"></div>
                     </div>
                     <div class="video-img">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cp832IE8PFE" title="Sesión 5: Patricia Ciriani + Kevin Malca + Rafael Zamora - II SINACT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        { !! $videofree[2]->content !! }
                         {{-- <img src="themes/webpage/assets/img/new-update/video-img.png" alt="video">
                         <div class="video-btn">
                             <a class="video-popup venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/JwC-Qx1lJso?feature=shared">
