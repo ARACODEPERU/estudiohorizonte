@@ -16,7 +16,7 @@ class Testimonies extends Component
     protected $tesbody;
     public function __construct()
     {
-        $this->tesheader = CmsSection::where('component_id', 'testimonies_header_section_13')
+        $this->tesheader = CmsSection::where('component_id', 'testimonios_encabezado_seccion_13')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(

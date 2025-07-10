@@ -15,7 +15,7 @@ class JoinWithUs extends Component
     protected $join;
     public function __construct()
     {
-        $this->join = CmsSection::where('component_id', 'join_with_us_12')
+        $this->join = CmsSection::where('component_id', 'Unete_a_nosotros_12')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
