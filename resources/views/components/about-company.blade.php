@@ -29,27 +29,25 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="about-content-tab-1" data-bs-toggle="tab"
                                             data-bs-target="#about-tab-1" type="button" role="tab" aria-controls="home"
-                                            aria-selected="true">Misión
+                                            aria-selected="true">{{ $abobody[0]->content }}
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="about-content-tab-2" data-bs-toggle="tab"
                                             data-bs-target="#about-tab-2" type="button" role="tab"
-                                            aria-controls="profile" aria-selected="false">Visión
+                                            aria-controls="profile" aria-selected="false">{{ $abobody[2]->content }}
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="about-content-tab-3" data-bs-toggle="tab"
                                             data-bs-target="#about-tab-3" type="button" role="tab" aria-controls="contact"
-                                            aria-selected="false">Valores
+                                            aria-selected="false">{{ $abobody[4]->content }}
                                     </button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="about-tab-1" role="tabpanel" aria-labelledby="about-content-tab-1">
-                                    <p>
-                                        Nuestra misión es crear entornos que inspiren, conecten y mejoren la calidad de vida de las personas, mediante el diseño y la arquitectura innovadora y sostenible.
-                                    </p>
+                                    <p>{{ $abobody[1]->content }}</p>
                                     {{-- <ul class="about-list">
                                         <li><span>01</span>Quality Content and Expert Instruction</li>
                                         <li><span>02</span>Student Engagement and Retention</li>
@@ -57,9 +55,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="about-tab-2" role="tabpanel" aria-labelledby="about-content-tab-2">
                                     <p>
-                                        Ser un referente en el diseño y la arquitectura en Perú, reconocidos por nuestra aproximación integral y 
-                                        nuestra capacidad para generar impacto positivo en las ciudades y territorios. Queremos ser un espacio de 
-                                        encuentro y conversación que inspire y lidere la transformación urbana y territorial.
+                                        {{ $abobody[3]->content }}
                                     </p>
                                     {{-- <ul class="about-list">
                                         <li><span>01</span>Quality Content and Expert Instruction</li>
@@ -68,11 +64,11 @@
                                 </div>
                                 <div class="tab-pane fade" id="about-tab-3" role="tabpanel" aria-labelledby="about-content-tab-2">
                                     <ul class="about-list">
-                                        <li><span>01</span>Colaboración: Trabajamos en equipo y con nuestros clientes para co-crear soluciones innovadoras y efectivas.</li>
-                                        <li><span>02</span>Sostenibilidad: Nos comprometemos con el diseño y la construcción de espacios que respeten el medio ambiente y promuevan la calidad de vida.</li>
-                                        <li><span>03</span>Innovación: Buscamos constantemente nuevas formas de abordar los desafíos urbanos y territoriales.</li>
-                                        <li><span>04</span>Inclusión: Nuestros proyectos buscan fomentar la interacción y el bienestar de todas las personas que los habitan.</li>
-                                        <li><span>05</span>Integridad: Nos guiamos por principios éticos y transparentes en nuestra práctica profesional.</li>
+                                        <li><span>{{ $abobody[5]->content }}</span>{{ $abobody[6]->content }}</li>
+                                        <li><span>{{ $abobody[7]->content }}</span>{{ $abobody[8]->content }}</li>
+                                        <li><span>{{ $abobody[9]->content }}</span>{{ $abobody[10]->content }}</li>
+                                        <li><span>{{ $abobody[11]->content }}</span>{{ $abobody[12]->content }}</li>
+                                        <li><span>{{ $abobody[13]->content }}</span>{{ $abobody[14]->content }}</li>
                                     </ul>
                                 </div>
                             </div>
