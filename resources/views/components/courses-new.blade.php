@@ -1520,7 +1520,7 @@
                                                     </div>
                                                     <div class="content">
                                                         <div class="content-top">
-                                                            <h4 class="name"><b>Cesar Lee</b></h4>
+                                                            <h4 class="name"><b>Cesar Lee Polick</b></h4>
                                                         </div>
                                                         <p>
                                                             Cesar Lee Polick es un arquitecto con 20 años de experiencia y un sin número de 
@@ -1573,7 +1573,7 @@
                                                     </div>
                                                     <div class="content">
                                                         <div class="content-top">
-                                                            <h4 class="name"><b>Carlos Zeballos</b></h4>
+                                                            <h4 class="name"><b>Carlos Zeballos Velarde</b></h4>
                                                         </div>
                                                         <p>
                                                             Carlos Zeballos Velarde cuenta con una destacada formación académica que incluye un PhD en Diseño Urbano y Paisaje por la Universidad de Kioto, Japón. Además, es Magíster en Planificación Urbano Ambiental por la Universidad Nacional de San Agustín (UNSA) de Arequipa y Magíster en Desarrollo Sustentable por la Universidad Nacional de Lanús, Argentina. Su trayectoria académica también incluye un Doctorado Honoris Causa por la Universidad Andina del Cuzco, Perú, y un Postdoctorado en el Instituto para la Investigación sobre la Humanidad y la Naturaleza (RIHN) de Kioto, Japón.
