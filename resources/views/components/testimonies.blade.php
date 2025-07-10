@@ -7,10 +7,10 @@
                             {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
                             <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
                         </span>
-                        Testimonios
+                        {{ $tesheader[0]->content }}
                     </h4>
                     <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
-                        Transformando vidas a través de la educación
+                        {{ $tesheader[1]->content }}
                     </h2>
                 </div>
                 <div class="testi-carousel swiper">
