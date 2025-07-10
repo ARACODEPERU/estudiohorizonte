@@ -15,7 +15,7 @@ class VideoFree extends Component
     protected $videofree;
     public function __construct()
     {
-        $this->videofree = CmsSection::where('component_id', 'video_free_10')
+        $this->videofree = CmsSection::where('component_id', 'video_libre_10')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
