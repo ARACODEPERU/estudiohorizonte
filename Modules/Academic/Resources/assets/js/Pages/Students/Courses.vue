@@ -125,7 +125,7 @@
         </ul>
         <div class="pt-5">
             <div class="grid gap-6 grid-cols-6">
-                <section class="col-span-6 sm:col-span-4">
+                <section class="col-span-6 ">
                     <!-- justify pills -->
                     <TabGroup as="div" class="mb-5 ">
                         <TabList class="flex flex-wrap justify-between mt-3 space-x-2 rtl:space-x-reverse text-center">
@@ -296,9 +296,9 @@
                         </template>
                     </div> -->
                 </section>
-                <section class="col-span-6 sm:col-span-2 rounded-md">
+                <!-- <section class="col-span-6 sm:col-span-2 rounded-md">
                     <shortVideos />
-                </section>
+                </section> -->
             </div>
         </div>
 
