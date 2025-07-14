@@ -10,49 +10,7 @@
         <x-page-header/>
         <!-- ./ page-header -->
 
-        <section class="about-section pt-120 pb-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-12">
-                        <div class="about-img-wrap wow fade-in-left" data-wow-delay="400ms">
-                            <img src="{{ asset('themes/webpage/assets/img/Julio_Flores.jpg') }}" alt="CEO">
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-12">
-                        <div class="about-content">
-                            <div class="section-heading mb-40">
-                                <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
-                                    <span class="heading-icon">
-                                        {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
-                                        <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
-                                    </span>
-                                    CEO & Fundador
-                                </h4>
-                                <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
-                                    Arq. JULIO FLORES
-                                </h2>
-                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">
-                                    Arquitecto con mención sobresaliente, Julio Flores lidera nuestra organización con una sólida trayectoria académica y 
-                                    profesional en el sector arquitectura, urbanismo y construcción. Es Magíster en Dirección de la Construcción por la 
-                                    Universidad Peruana de Ciencias Aplicadas (UPC), institución donde también se especializó en BIM Management y Lean Construction, 
-                                    herramientas clave para la gestión moderna de proyectos constructivos.
-                                </p>
-                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">
-                                    Su enfoque integral del desarrollo urbano se fortalece con estudios internacionales en Diseño del Paisaje en la Pontificia 
-                                    Universidad Católica de Chile (UC), Proyección Urbanística en la Universitat Politècnica de Catalunya (España), 
-                                    y Derecho Urbanístico en la Pontificia Universidad Católica del Perú (PUCP).
-                                </p>
-                                <p class="mt-20 wow fade-in-bottom" data-wow-delay="500ms">
-                                    Gracias a su visión estratégica, capacidad de innovación y profundo conocimiento técnico, Julio ha impulsado proyectos de 
-                                    alto impacto que integran eficiencia, sostenibilidad y calidad urbana. Su liderazgo inspira al equipo a trabajar con excelencia 
-                                    y compromiso en cada etapa del desarrollo arquitectónico.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <x-ceo-founder/>
         <!-- ./ about-section -->
 
         <section class="about-feature pt-120 pb-120">
