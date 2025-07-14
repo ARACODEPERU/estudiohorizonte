@@ -15,7 +15,27 @@
                 </div>
                 <div class="testi-carousel swiper">
                     <div class="swiper-wrapper">
+                        @foreach ($tesbody as $k => $tesbo)
                         <div class="swiper-slide">
+                            <div class="testi-item-2">
+                                <div class="testi-top-content">
+                                    <div class="testi-thumb">
+                                        <img src="{{ asset('storage/'.$tesbo->item->items[0]->content) }}" alt="testi">
+                                    </div>
+                                    <p>
+                                        {{ $tesbo->item->items[3]->content }}
+                                    </p>
+                                </div>
+                                <div class="testi-bottom">
+                                    <div class="author-info">
+                                        <h4 class="name">{{ $tesbo->item->items[1]->content }}</h4>
+                                        <span>{{ $tesbo->item->items[2]->content }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                        {{-- <div class="swiper-slide">
                             <div class="testi-item-2">
                                 <div class="testi-top-content">
                                     <div class="testi-thumb">
@@ -33,14 +53,6 @@
                                         <h4 class="name">Arq. Noemi Aguilar Blas</h4>
                                         <span>Trujillo - Perú</span>
                                     </div>
-                                    {{-- <ul class="testi-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
@@ -61,14 +73,6 @@
                                         <h4 class="name">Arq. Juan Atencia Alvis</h4>
                                         <span>Bogotá - Colombia</span>
                                     </div>
-                                    {{-- <ul class="testi-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
@@ -90,17 +94,9 @@
                                         <h4 class="name">Arq. Hatsumi Cruz Esquivel</h4>
                                         <span>Chimbote - Perú</span>
                                     </div>
-                                    {{-- <ul class="testi-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul> --}}
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

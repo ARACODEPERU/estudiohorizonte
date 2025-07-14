@@ -6,6 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Modules\CMS\Entities\CmsSection;
+use Modules\CMS\Entities\CmsSectionItem;
 
 class Testimonies extends Component
 {
@@ -25,6 +26,8 @@ class Testimonies extends Component
             )
             ->orderBy('cms_section_items.position')
             ->get();
+            
+        $this->tesbody = CmsSectionItem::with('item.items')->where('section_id', 14)->get();
     }
 
     /**
@@ -34,6 +37,7 @@ class Testimonies extends Component
     {
         return view('components.testimonies', [
             'tesheader' => $this->tesheader,
+            'tesbody' => $this->tesbody,
         ]);
     }
 }
