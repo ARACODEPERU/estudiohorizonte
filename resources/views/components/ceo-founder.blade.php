@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-12">
                         <div class="about-img-wrap wow fade-in-left" data-wow-delay="400ms">
-                            <img src="{{ asset('themes/webpage/assets/img/Julio_Flores.jpg') }}" alt="CEO">
+                            <img src="{{ asset('storage/'.$ceo[0]->content) }}" alt="CEO">
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-12">
@@ -13,7 +13,7 @@
                                 <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
                                     <span class="heading-icon">
                                         {{-- <i class="fa-sharp fa-solid fa-bolt"></i> --}}
-                                        <img src="{{ asset('storage/'.$ceo[0]->content) }}" alt="icon" style="width: 15px;">
+                                        <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon" style="width: 15px;">
                                     </span>
                                     {{ $ceo[1]->content }}
                                 </h4>
