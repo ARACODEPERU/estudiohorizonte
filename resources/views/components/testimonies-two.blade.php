@@ -1,8 +1,8 @@
 <div>
     <section class="testimonial-section-3 pt-120 pb-120">
         <div class="shapes">
-            <div class="shape shape-1"><img src="themes/webpage/assets/img/shapes/testi-shape-3.png" alt="shape"></div>
-            <div class="shape shape-2"><img src="themes/webpage/assets/img/shapes/testi-shape-4.png" alt="shape"></div>
+            <div class="shape shape-1"><img src="{{ asset('themes/webpage/assets/img/shapes/testi-shape-3.png') }}" alt="shape"></div>
+            <div class="shape shape-2"><img src="{{ asset('themes/webpage/assets/img/shapes/testi-shape-4.png') }}" alt="shape"></div>
         </div>
         <div class="container">
             <div class="row gy-xl-0 gy-5 align-items-center">
@@ -15,16 +15,14 @@
                                     <img src="{{ asset('themes/webpage/assets/img/favicon.png') }}" alt="icon"
                                         style="width: 15px;">
                                 </span>
-                                Testimonios
+                                {{ $tesheader[0]->content }}
                             </h4>
                             <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">
-                                Transformando vidas a través de la educación
+                                {{ $tesheader[1]->content }}
                             </h2>
                         </div>
                         <p class="mb-0 wow fade-in-bottom" data-wow-delay="500ms">
-                            Cada historia refleja el impacto real de nuestra propuesta educativa. Descubre cómo
-                            <b>Estudio Horizonte</b> ha sido parte del crecimiento personal y profesional de nuestros
-                            estudiantes.
+                            {{ $tesheader[2]->content }}
                         </p>
                     </div>
                 </div>

@@ -5,15 +5,29 @@ namespace App\View\Components;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Modules\CMS\Entities\CmsSection;
+use Modules\CMS\Entities\CmsSectionItem;
 
 class TestimoniesTwo extends Component
 {
     /**
      * Create a new component instance.
      */
+    protected $tesheader;
+    protected $tesbody;
     public function __construct()
     {
-        //
+        $this->tesheader = CmsSection::where('component_id', 'testimonios_nosotros_encabezado_18')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+            
+        $this->tesbody = CmsSectionItem::with('item.items')->where('section_id', 14)->get();
     }
 
     /**
@@ -21,6 +35,9 @@ class TestimoniesTwo extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.testimonies-two');
+        return view('components.testimonies-two', [
+            'tesheader' => $this->tesheader,
+            'tesbody' => $this->tesbody,
+        ]);
     }
 }
