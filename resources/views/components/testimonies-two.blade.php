@@ -30,9 +30,27 @@
                     <div class="testi-carousel-wrap-2">
                         <div class="testi-carousel-2 swiper">
                             <div class="swiper-wrapper">
+                                @foreach ($tesbody as $k => $tesbo)
                                 <div class="swiper-slide">
                                     <div class="testi-item-3">
-                                        {{-- <h3 class="title">Interactive Learning Experience</h3> --}}
+                                        <p>
+                                            {{ $tesbo->item->items[3]->content }}
+                                        </p>
+                                        <div class="testi-author">
+                                            <div class="testi-author-img">
+                                                <img src="{{ asset('storage/'.$tesbo->item->items[0]->content) }}"
+                                                    alt="testi">
+                                            </div>
+                                            <h4 class="name">
+                                                {{ $tesbo->item->items[1]->content }} <br>
+                                                <span>{{ $tesbo->item->items[2]->content }}</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                {{-- <div class="swiper-slide">
+                                    <div class="testi-item-3">
                                         <p>
                                             “ESTUDIO HORIZONTE ha sido fundamental en mi crecimiento profesional. Sus
                                             capacitaciones de
@@ -56,7 +74,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testi-item-3">
-                                        {{-- <h3 class="title">Interactive Learning Experience</h3> --}}
                                         <p>
                                             “La capacitación que recibí en ESTUDIO HORIZONTE sobre paisaje y territorio
                                             fue clave para
@@ -78,7 +95,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testi-item-3">
-                                        {{-- <h3 class="title">Interactive Learning Experience</h3> --}}
                                         <p>
                                             "ESTUDIO HORIZONTE no solo te brinda conocimientos técnicos de alta calidad,
                                             sino que
@@ -99,7 +115,7 @@
                                             </h4>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="swiper-arrow">
