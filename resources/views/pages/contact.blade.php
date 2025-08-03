@@ -6,23 +6,10 @@
         <!-- header-area-start -->
         <x-header/>
         <!-- /.Main Header -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-        <section class="page-header" style="padding: 60px;">
-            <div class="bg-img">
-                <img src="themes/webpage/assets/img/bg-img/page-header-bg.jpg" alt="bg" style="width: 100%;">
-            </div>
-            <div class="container">
-                <div class="page-header-content">
-                    <h1 class="title">Contactanos</h1>
-                    <h4 class="sub-title">
-                        <a class="home" href="{{ route('index_main') }}">Home </a>
-                        <span class="icon">/</span>
-                        <a class="inner-page" href=""> Contactanos</a>
-                    </h4>
-                </div>
-            </div>
-        </section>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <x-page-header-contact/>
         <!-- ./ page-header -->
 
         <section class="contact-section pt-80 pb-120">

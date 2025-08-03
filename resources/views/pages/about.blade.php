@@ -7,7 +7,7 @@
         <x-header/>
         <!-- /.Main Header -->
 
-        <x-page-header/>
+        <x-page-header-about/>
         <!-- ./ page-header -->
 
         <x-ceo-founder/>
