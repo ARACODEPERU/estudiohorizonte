@@ -17,12 +17,7 @@
                 <div class="row gy-lg-0 gy-5">
                     <div class="col-lg-7">
                         <div class="blog-contact-form contact-form">
-                            <h2 class="title mb-0">¿Hablamos?</h2>
-                            <p class="mb-30 mt-10">
-                                En <span><b>Estudio Horizonte</b></span>, estamos listos para ayudarte. Si tienes preguntas, necesitas más información o quieres
-                                comenzar un proyecto con nosotros, no dudes en ponerte en contacto. Completa el formulario o utiliza los medios que prefieras:
-                                estamos aquí para escucharte.
-                            </p>
+                            <x-contact-block-one/>
                             <div class="request-form">
                                 <form action="{{ route('apisubscriber') }}" method="post" id="pageContactForm" class="form-horizontal">
                                     @csrf
@@ -75,13 +70,7 @@
                     </div>
                     <div class="col-lg-5 col-md-12">
                         <div class="contact-content">
-                            <div class="contact-top">
-                                <h3 class="title">Visítanos o llámanos</h3>
-                                <p>
-                                    Puedes encontrarnos en nuestra oficina o comunicarte por
-                                    teléfono para resolver tus dudas, coordinar una reunión o recibir asesoría directa.
-                                </p>
-                            </div>
+                            <x-contact-block-one/>
                             <div class="contact-list">
                                 <div class="list-item">
                                     <div class="icon">
