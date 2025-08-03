@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <div class="contact-content">
-                        <x-contact-block-one />
+                        <x-contact-block-two />
                     </div>
                 </div>
             </div>
