@@ -1,5 +1,7 @@
 <div>
-    <footer class="footer-section pt-120" data-background="themes/webpage/assets/img/bg-img/footer-bg.jpg">
+    <footer class="footer-section pt-120" 
+            {{-- data-background="{{ asset('themes/webpage/assets/img/bg-img/footer-bg.jpg') }}" --}}
+            style="background: #000000; background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(4, 18, 19, 1) 35%, rgba(31, 68, 74, 1) 100%);">
             <div class="footer-top-wrap">
                 <div class="container">
                     {{-- <div class="footer-top text-center">

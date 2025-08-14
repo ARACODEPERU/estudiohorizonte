@@ -16,14 +16,14 @@
         <!-- CSS here -->
         <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/fontawesome.min.css') }}">
-        <link rel="stylesheet" href="themes/webpage/assets/css/venobox.min.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/animate.min.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/keyframe-animation.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/odometer.min.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/nice-select.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/daterangepicker.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/swiper.min.css">
-        <link rel="stylesheet" href="themes/webpage/assets/css/main.css">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/venobox.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/animate.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/keyframe-animation.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/odometer.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/nice-select.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/daterangepicker.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/swiper.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('themes/webpage/assets/css/main.css') }}">
     </head>
 
     <body>
@@ -35,13 +35,13 @@
         <!--scrollup-->
 
         <!-- JS here -->
-        <script src="themes/webpage/assets/js/vendor/jquary-3.6.0.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/bootstrap-bundle.js"></script>
-        <script src="themes/webpage/assets/js/vendor/jquery.isotope.js"></script>
-        <script src="themes/webpage/assets/js/vendor/waypoints.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/moment.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/daterangepicker.min.js"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/jquary-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/bootstrap-bundle.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/jquery.isotope.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/waypoints.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/moment.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/daterangepicker.min.js') }}"></script>
         <script src="themes/webpage/assets/js/vendor/venobox.min.js"></script>
         <script src="themes/webpage/assets/js/vendor/odometer.min.js"></script>
         <script src="themes/webpage/assets/js/vendor/countdown.js"></script>

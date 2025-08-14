@@ -47,7 +47,14 @@ class WebPageController extends Controller
 
     public function index()
     {
-        return view('pages.home');
+        $courses = OnliItem::with('course')->get();
+        $courses = $courses->shuffle();
+        $categories = AcaCategoryCourse::all();
+
+        return view('pages.home', [
+            'courses' => $courses,
+            'categories' => $categories
+        ]);
     }
 
     
@@ -139,9 +146,32 @@ class WebPageController extends Controller
         return view('pages.courses');
     }
     
-    public function coursedescription()
+    public function coursedescription($id)
     {
-        return view('pages.course-description');
+        $item = OnliItem::find($id);
+
+        $course = AcaCourse::with('category')
+            ->with('modality')
+            ->with('modules')
+            ->with('teachers.teacher.person.resumes')
+            ->with('brochure')
+            ->with('agreements')
+            ->where('id', $item->item_id)
+            ->first();
+
+        $latest_courses = OnliItem::with('course')
+            ->orderBy('id', 'desc')
+            ->where('id', '!=', $id)
+            ->take(10)
+            ->get()
+            ->shuffle()
+            ->take(3);
+
+        return view('pages.course-description', [
+            'course' => $course,
+            'item' => $item,
+            'latest_courses' => $latest_courses
+        ]);
     }
 
     // public function coursedescription($id)
