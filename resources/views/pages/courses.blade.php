@@ -11,7 +11,7 @@
     <!-- ./ page-header -->
 
 
-    <section class="feature-course bg-white pt-80 pb-120">
+    <section class="feature-course bg-white pt-10 pb-120">
         <div class="container">
             <div class="feature-course-top heading-space">
                 {{-- <ul class="course-nav nav nav-tabs mb-40" id="myTab-2" role="tablist">
