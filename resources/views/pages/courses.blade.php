@@ -3,271 +3,1102 @@
 @section('content')
 
 
-        <!-- header-area-start -->
-        <x-header/>
-        <!-- /.Main Header -->
-        
-        <x-page-header-courses/>
-        <!-- ./ page-header -->
+    <!-- header-area-start -->
+    <x-header />
+    <!-- /.Main Header -->
+
+    <x-page-header-courses />
+    <!-- ./ page-header -->
 
 
-        <section class="feature-course bg-white pt-120 pb-120">
-            {{-- <div class="container">
-                <div class="section-heading text-center">
-                    <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms"><span class="heading-icon"><i class="fa-sharp fa-solid fa-bolt"></i></span>Top Class Courses</h4>
-                    <h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Explore Featured Courses</h2>
-                </div>
-                <div class="row gy-4 justify-content-center">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-item wow fade-in-bottom" data-wow-delay="200ms">
-                            <div class="course-thumb-wrap">
-                                <div class="course-thumb">
-                                    <img src="themes/webpage/assets/img/images/course-img-1.png" alt="course">
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <span class="offer">Skill</span>
-                                <h3 class="title"><a href="course-details.html">React Tutorial Beginners For Skills Building Carrera</a></h3>
-                                <ul class="course-list">
-                                    <li><i class="fa-light fa-file"></i>Lesson 8</li>
-                                    <li><i class="fa-light fa-user"></i>Students 50</li>
-                                    <li><i class="fa-light fa-eye"></i>View: 12K</li>
-                                </ul>
-                                <div class="course-author-box">
-                                    <div class="course-author">
-                                        <div class="author-img">
-                                            <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
-                                        </div>
-                                        <div class="author-info">
-                                            <h4 class="name">Kevin Perry</h4>
-                                            <span>Instructor</span>
-                                        </div>
-                                    </div>
-                                    <ul class="course-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <span class="price">$59.00</span>
-                                <a href="course-details.html" class="course-btn">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-item wow fade-in-bottom" data-wow-delay="400ms">
-                            <div class="course-thumb-wrap">
-                                <div class="course-thumb">
-                                    <img src="themes/webpage/assets/img/images/course-img-2.png" alt="course">
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <span class="offer">Free</span>
-                                <h3 class="title"><a href="course-details.html">Cultural Perspectives in Teaching <br>and Learning Environments</a></h3>
-                                <ul class="course-list">
-                                    <li><i class="fa-light fa-file"></i>Lesson 8</li>
-                                    <li><i class="fa-light fa-user"></i>Students 50</li>
-                                    <li><i class="fa-light fa-eye"></i>View: 12K</li>
-                                </ul>
-                                <div class="course-author-box">
-                                    <div class="course-author">
-                                        <div class="author-img">
-                                            <img src="themes/webpage/assets/img/images/course-author-2.png" alt="course">
-                                        </div>
-                                        <div class="author-info">
-                                            <h4 class="name">Kevin Perry</h4>
-                                            <span>Instructor</span>
+    <section class="feature-course bg-white pt-80 pb-120">
+        <div class="container">
+            <div class="feature-course-top heading-space">
+                {{-- <ul class="course-nav nav nav-tabs mb-40" id="myTab-2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                                    aria-controls="home" aria-selected="true">All Categories
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                                    aria-controls="profile" aria-selected="false">Business
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab"
+                                    aria-controls="contact" aria-selected="false">Development
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab" data-bs-target="#contact-2" type="button" role="tab"
+                                    aria-controls="contact-2" aria-selected="false">Marketing
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab-3" data-bs-toggle="tab" data-bs-target="#contact-3" type="button" role="tab"
+                                    aria-controls="contact-3" aria-selected="false">Finance
+                            </button>
+                        </li>
+                    </ul> --}}
+            </div>
+            <div class="course-tab-content tab-content" id="myTabContent-2">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row gy-4 justify-content-center">
+                        @foreach ($courses as $item)
+                            <div class="col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <span class="offer"
+                                                style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                            <a href="{{ route('web_course_description', $item->id) }}">
+                                                <img src="{{ asset('storage/' . $item->course->image) }}" alt="course"
+                                                    style="width: 100%;">
+                                            </a>
                                         </div>
                                     </div>
-                                    <ul class="course-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <span class="price">$59.00</span>
-                                <a href="course-details.html" class="course-btn">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-item wow fade-in-bottom" data-wow-delay="500ms">
-                            <div class="course-thumb-wrap">
-                                <div class="course-thumb">
-                                    <img src="themes/webpage/assets/img/images/course-img-3.png" alt="course">
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <span class="offer">Language</span>
-                                <h3 class="title"><a href="course-details.html">Innovative Instructional Strategies <br>for Enhancing Student</a></h3>
-                                <ul class="course-list">
-                                    <li><i class="fa-light fa-file"></i>Lesson 8</li>
-                                    <li><i class="fa-light fa-user"></i>Students 50</li>
-                                    <li><i class="fa-light fa-eye"></i>View: 12K</li>
-                                </ul>
-                                <div class="course-author-box">
-                                    <div class="course-author">
-                                        <div class="author-img">
-                                            <img src="themes/webpage/assets/img/images/course-author-3.png" alt="course">
-                                        </div>
-                                        <div class="author-info">
-                                            <h4 class="name">Kevin Perry</h4>
-                                            <span>Instructor</span>
+                                    <div class="course-content">
+                                        <h3 class="title" style="font-size: 20px;">
+                                            <a
+                                                href="{{ route('web_course_description', $item->id) }}">{{ $item->name }}</a>
+                                        </h3>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="{{ isset($item->course->teacher->person->image) ? asset('storage/' . $item->course->teacher->person->image) : '' }}"
+                                                        alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="">
+                                                        <h4 class="name">
+                                                            {{ $item->course->teacher->person->names . ' ' . $item->course->teacher->person->father_lastname }}
+                                                        </h4>
+                                                    </a>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><span class="price">S/ {{ $item->price }}</span></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <ul class="course-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <span class="price">$59.00</span>
-                                <a href="course-details.html" class="course-btn">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-item wow fade-in-bottom" data-wow-delay="200ms">
-                            <div class="course-thumb-wrap">
-                                <div class="course-thumb">
-                                    <img src="themes/webpage/assets/img/images/course-img-4.png" alt="course">
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <span class="offer">Develop</span>
-                                <h3 class="title"><a href="course-details.html">React Tutorial Beginners For Skills Building Carrera</a></h3>
-                                <ul class="course-list">
-                                    <li><i class="fa-light fa-file"></i>Lesson 8</li>
-                                    <li><i class="fa-light fa-user"></i>Students 50</li>
-                                    <li><i class="fa-light fa-eye"></i>View: 12K</li>
-                                </ul>
-                                <div class="course-author-box">
-                                    <div class="course-author">
-                                        <div class="author-img">
-                                            <img src="themes/webpage/assets/img/images/course-author-4.png" alt="course">
-                                        </div>
-                                        <div class="author-info">
-                                            <h4 class="name">Kevin Perry</h4>
-                                            <span>Instructor</span>
-                                        </div>
+                                    <div class="bottom-content">
+                                        <a href="{{ route('web_course_description', $item->id) }}" class="course-btn">Leer
+                                            Más</a>
+                                        <a href="https://wa.link/g3i7et" class="ed-primary-btn-2">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Adquirir
+                                        </a>
                                     </div>
-                                    <ul class="course-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul>
                                 </div>
                             </div>
-                            <div class="bottom-content">
-                                <span class="price">$59.00</span>
-                                <a href="course-details.html" class="course-btn">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-item wow fade-in-bottom" data-wow-delay="400ms">
-                            <div class="course-thumb-wrap">
-                                <div class="course-thumb">
-                                    <img src="themes/webpage/assets/img/images/course-img-5.png" alt="course">
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <span class="offer">Management</span>
-                                <h3 class="title"><a href="course-details.html">Cultural Perspectives in Teaching <br>and Learning Environments</a></h3>
-                                <ul class="course-list">
-                                    <li><i class="fa-light fa-file"></i>Lesson 8</li>
-                                    <li><i class="fa-light fa-user"></i>Students 50</li>
-                                    <li><i class="fa-light fa-eye"></i>View: 12K</li>
-                                </ul>
-                                <div class="course-author-box">
-                                    <div class="course-author">
-                                        <div class="author-img">
-                                            <img src="themes/webpage/assets/img/images/course-author-5.png" alt="course">
-                                        </div>
-                                        <div class="author-info">
-                                            <h4 class="name">Kevin Perry</h4>
-                                            <span>Instructor</span>
-                                        </div>
-                                    </div>
-                                    <ul class="course-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <span class="price">$59.00</span>
-                                <a href="course-details.html" class="course-btn">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-item wow fade-in-bottom" data-wow-delay="500ms">
-                            <div class="course-thumb-wrap">
-                                <div class="course-thumb">
-                                    <img src="themes/webpage/assets/img/images/course-img-2.png" alt="course">
-                                </div>
-                            </div>
-                            <div class="course-content">
-                                <span class="offer">Educational</span>
-                                <h3 class="title"><a href="course-details.html">Innovative Instructional Strategies <br>for Enhancing Student</a></h3>
-                                <ul class="course-list">
-                                    <li><i class="fa-light fa-file"></i>Lesson 8</li>
-                                    <li><i class="fa-light fa-user"></i>Students 50</li>
-                                    <li><i class="fa-light fa-eye"></i>View: 12K</li>
-                                </ul>
-                                <div class="course-author-box">
-                                    <div class="course-author">
-                                        <div class="author-img">
-                                            <img src="themes/webpage/assets/img/images/course-author-6.png" alt="course">
-                                        </div>
-                                        <div class="author-info">
-                                            <h4 class="name">Kevin Perry</h4>
-                                            <span>Instructor</span>
-                                        </div>
-                                    </div>
-                                    <ul class="course-review">
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                        <li class="point">(4.7)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <span class="price">$59.00</span>
-                                <a href="course-details.html" class="course-btn">View Details</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
-            </div> --}}
-            
-            <div class="container">
+                {{-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-1.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">React Tutorial Beginners For Skills Building Carrera</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-2.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Cultural Perspectives in Teaching and Learning Environments</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-2.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Deniel Ross</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Innovative Instructional Strategies <br>for Enhancing Student</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-3.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Andrew klip</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Teaching Students to Navigate the Digital World Responsibly</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/service/course-img-12.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-4.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Enhancing Class Communication and Presentation Skills</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-5.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Analyzing, Evaluating, & Creating Solutions in Everyday Situations</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-1.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">React Tutorial Beginners For Skills Building Carrera</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-2.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Cultural Perspectives in Teaching and Learning Environments</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-2.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Deniel Ross</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Innovative Instructional Strategies <br>for Enhancing Student</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-3.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Andrew klip</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Teaching Students to Navigate the Digital World Responsibly</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/service/course-img-12.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-4.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Enhancing Class Communication and Presentation Skills</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-5.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Analyzing, Evaluating, & Creating Solutions in Everyday Situations</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab-2">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-1.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">React Tutorial Beginners For Skills Building Carrera</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-2.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Cultural Perspectives in Teaching and Learning Environments</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-2.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Deniel Ross</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Innovative Instructional Strategies <br>for Enhancing Student</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-3.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Andrew klip</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Teaching Students to Navigate the Digital World Responsibly</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/service/course-img-12.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-4.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Enhancing Class Communication and Presentation Skills</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-5.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Analyzing, Evaluating, & Creating Solutions in Everyday Situations</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-3" role="tabpanel" aria-labelledby="contact-tab-3">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-1.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">React Tutorial Beginners For Skills Building Carrera</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-2.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Cultural Perspectives in Teaching and Learning Environments</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-2.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Deniel Ross</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/images/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Innovative Instructional Strategies <br>for Enhancing Student</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/course-author-3.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Andrew klip</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-3.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Teaching Students to Navigate the Digital World Responsibly</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/service/course-img-12.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-4.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Enhancing Class Communication and Presentation Skills</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="course-item">
+                                    <div class="course-thumb-wrap">
+                                        <div class="course-thumb">
+                                            <img src="themes/webpage/assets/img/new-update/course-img-5.png" alt="course">
+                                        </div>
+                                    </div>
+                                    <div class="course-content">
+                                        <span class="offer">Free</span>
+                                        <h3 class="title"><a href="course-details.html">Analyzing, Evaluating, & Creating Solutions in Everyday Situations</a></h3>
+                                        <ul class="course-list">
+                                            <li><i class="fa-light fa-file"></i>Lesson 8</li>
+                                            <li><i class="fa-light fa-user"></i>Students 50</li>
+                                            <li><i class="fa-light fa-eye"></i>View: 12K</li>
+                                        </ul>
+                                        <div class="course-author-box">
+                                            <div class="course-author">
+                                                <div class="author-img">
+                                                    <img src="themes/webpage/assets/img/images/author-img-1.png" alt="course">
+                                                </div>
+                                                <div class="author-info">
+                                                    <h4 class="name">Kevin Perry</h4>
+                                                    <span>Instructor</span>
+                                                </div>
+                                            </div>
+                                            <ul class="course-review">
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                                                <li class="point">(4.7)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <span class="price">$59.00</span>
+                                        <a href="course-details.html" class="course-btn">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+            </div>
+        </div>
+
+        {{-- <div class="container">
                 <div class="feature-course-top heading-space">
                     <div class="section-heading mb-0">
                         <h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">
@@ -287,25 +1118,7 @@
                                 <img src="{{ asset('themes/webpage/assets/img/courses/course_01.jpg') }}" alt="course" style="width: 100%;">
                             </div>
                             <div class="details-inner">
-                                {{-- <ul class="details-meta">
-                                    <li>Best Seller</li>
-                                    <li>Latest</li>
-                                </ul> --}}
-                                {{-- <h2 class="title">User Experience Design Essentials - Adobe XD UI UX De1sign <br> Course For Limted Time</h2> --}}
                                 <ul class="course-details-list">
-                                    {{-- <li><img src="themes/webpage/assets/img/service/course-details-author.png" alt="author"><span>Instructor:</span> Kevin Perry</li> --}}
-                                    {{-- <i class="fa-solid fa-tags"></i>Categoria</li> --}}
-                                    {{-- <li><i class="fa-light fa-calendar"></i>04 April, 2022</li>
-                                    <li class="review-wrap">
-                                        <ul>
-                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
-                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
-                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
-                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
-                                            <li><i class="fa-sharp fa-regular fa-star"></i></li>
-                                        </ul>
-                                        (4.88)
-                                    </li> --}}
                                 </ul>
                             </div>
                             <div class="course-details-tab" style="margin-top: 5px;">
@@ -315,16 +1128,6 @@
                                             <i class="fa fa-bookmark"></i>Presentación
                                         </button>
                                     </li>
-                                    {{-- <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                                            <i class="fa fa-book"></i>Malla Curricular
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                                            <i class="fa fa-star"></i>Beneficios
-                                        </button>
-                                    </li> --}}
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="contact-tab-2" data-bs-toggle="tab" data-bs-target="#contact-2" type="button" role="tab" aria-controls="contact-2" aria-selected="false">
                                             <i class="fa fa-user"></i>Plana Docente
@@ -352,65 +1155,6 @@
                                             </p>
                                         </div>
                                     </div>
-                                    {{-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <div class="curriculam-area">
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="headingOne">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            Foundations of Fluent English Speaking
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <ul class="curri-list">
-                                                                <li><span><i class="fa-regular fa-video"></i>  Mastering Pronunciation and Intonation</span> <span>54.23 <i class="fa-regular fa-unlock"></i></span></li>
-                                                                <li><span><i class="fa-regular fa-video"></i>  Building a Strong Vocabulary for Everyday Communication</span> <span>45.05 <i class="fa-regular fa-unlock"></i></span></li>
-                                                                <li><span><i class="fa-regular fa-file-contract"></i>  Understanding Basic Sentence Structure and Grammar</span> <span>1.6hr <i class="fa-regular fa-lock"></i></span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        User Research Techniques
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="curri-list">
-                                                            <li><span><i class="fa-regular fa-video"></i>  Mastering Pronunciation and Intonation</span> <span>54.23 <i class="fa-regular fa-unlock"></i></span></li>
-                                                            <li><span><i class="fa-regular fa-video"></i>  Building a Strong Vocabulary for Everyday Communication</span> <span>45.05 <i class="fa-regular fa-unlock"></i></span></li>
-                                                            <li><span><i class="fa-regular fa-file-contract"></i>  Understanding Basic Sentence Structure and Grammar</span> <span>1.6hr <i class="fa-regular fa-lock"></i></span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Coursed Key Features
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="curri-list">
-                                                            <li><span><i class="fa-regular fa-video"></i>  Mastering Pronunciation and Intonation</span> <span>54.23 <i class="fa-regular fa-unlock"></i></span></li>
-                                                            <li><span><i class="fa-regular fa-video"></i>  Building a Strong Vocabulary for Everyday Communication</span> <span>45.05 <i class="fa-regular fa-unlock"></i></span></li>
-                                                            <li><span><i class="fa-regular fa-file-contract"></i>  Understanding Basic Sentence Structure and Grammar</span> <span>1.6hr <i class="fa-regular fa-lock"></i></span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                        <div class="row team-wrap-2 gy-lg-0 gy-4 justify-content-center">
-                                            
-                                        </div>
-                                    </div> --}}
                                     <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab-2">
                                         <div class="reviewr-wrap">
                                             <div class="review-list">
@@ -794,13 +1538,11 @@
                             <i class="fa-solid fa-tags"></i> "Certificado disponible por un costo adicional (opcional)."
                             <h4 class="price">
                                 S/ 100.00 
-                                {{-- <span>25% off</span> --}}
                             </h4>
                             <a href="https://wa.link/g3i7et" class="ed-primary-btn">
                                 <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 18px;"></i>
                                 &nbsp; Adquirir
                             </a>
-                            {{-- <a href="cart.html" class="ed-primary-btn buy-btn">Buy Now</a> --}}
                         </div>
                         <div class="course-sidebar sticky-widget">
                             <h4 class="sidebar-title">News</h4>
@@ -817,11 +1559,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- ./ course-section -->
+            </div> --}}
+    </section>
+    <!-- ./ course-section -->
 
-        <x-footer />
-        <!-- ./ footer-section -->
+    <x-footer />
+    <!-- ./ footer-section -->
 
 @stop

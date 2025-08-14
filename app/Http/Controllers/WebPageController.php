@@ -112,9 +112,10 @@ class WebPageController extends Controller
 
     public function courses()
     {
-        // $courses = OnliItem::with('course')->get();
-        // $courses = $courses->shuffle();
-        // $categories = AcaCategoryCourse::all();
+        
+        $courses = OnliItem::with('course')->get();
+        $courses = $courses->shuffle();
+        $categories = AcaCategoryCourse::all();
 
         // $banner = CmsSection::where('component_id', 'cursos_banner_area_14')  //siempre cambiar el id del componente
         //     ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -143,7 +144,10 @@ class WebPageController extends Controller
         //     'title' => $title
         // ]);
         
-        return view('pages.courses');
+        return view('pages.courses', [
+            'courses' => $courses,
+            'categories' => $categories
+        ]);
     }
     
     public function coursedescription($id)
