@@ -51,7 +51,7 @@
                                     <div class="course-thumb-wrap">
                                         <div class="course-thumb">
                                             <span class="offer"
-                                                style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">Foro</span>
+                                                style=" z-index: 999; position: absolute; margin-top: 25px; background: #fff; ">{{ $item->course->type_description }} </span>
                                             <a href="{{ route('web_course_description', $item->id) }}">
                                                 <img src="{{ asset('storage/' . $item->course->image) }}" alt="course"
                                                     style="width: 100%;">
