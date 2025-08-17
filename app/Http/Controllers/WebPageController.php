@@ -239,6 +239,11 @@ class WebPageController extends Controller
     {
         return view('pages/privacy-policies');
     }
+    public function complaints()
+    {
+        return view('pages/complaints-book');
+    }
+    
     
     public function shopcart()
     {

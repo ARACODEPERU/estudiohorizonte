@@ -42,16 +42,16 @@
         <script src="{{ asset('themes/webpage/assets/js/vendor/waypoints.min.js') }}"></script>
         <script src="{{ asset('themes/webpage/assets/js/vendor/moment.min.js') }}"></script>
         <script src="{{ asset('themes/webpage/assets/js/vendor/daterangepicker.min.js') }}"></script>
-        <script src="themes/webpage/assets/js/vendor/venobox.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/odometer.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/countdown.js"></script>
-        <script src="themes/webpage/assets/js/vendor/meanmenu.js"></script>
-        <script src="themes/webpage/assets/js/vendor/smooth-scroll.js"></script>
-        <script src="themes/webpage/assets/js/vendor/imagesloaded-pkgd.js"></script>
-        <script src="themes/webpage/assets/js/vendor/wow.min.js"></script>
-        <script src="themes/webpage/assets/js/vendor/jquery.carouselTicker.js"></script>
-        <script src="themes/webpage/assets/js/vendor/nice-select.js"></script>
-        <script src="themes/webpage/assets/js/vendor/swiper.min.js"></script>
-        <script src="themes/webpage/assets/js/main.js"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/venobox.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/odometer.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/countdown.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/meanmenu.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/smooth-scroll.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/imagesloaded-pkgd.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/wow.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/jquery.carouselTicker.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/nice-select.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/vendor/swiper.min.js') }}"></script>
+        <script src="{{ asset('themes/webpage/assets/js/main.js') }}"></script>
     </body>
 </html>

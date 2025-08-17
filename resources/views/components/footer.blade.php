@@ -50,7 +50,7 @@
                                 <ul class="footer-list">
                                     <li><a href="">Calidad</a></li>
                                     <li><a href="{{ route('web_privacy_policies') }}">Privacidad</a></li>
-                                    <li><a href="">Libro de reclamaciones</a></li>
+                                    <li><a href="{{ route('web_complaints') }}">Libro de reclamaciones</a></li>
                                 </ul>
                             </div>
                         </div>

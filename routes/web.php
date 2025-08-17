@@ -37,6 +37,7 @@ Route::get('/cursos', [WebPageController::class, 'courses'])->name('web_courses'
 Route::get('/curso-descripcion/{id}', [WebPageController::class, 'coursedescription'])->name('web_course_description');
 
 Route::get('/politicas-de-privacidad', [WebPageController::class, 'privacypolicies'])->name('web_privacy_policies');
+Route::get('/libro-de-reclamaciones',  [WebPageController::class, 'complaints'])->name('web_complaints');
 
 Route::get('/carrito', [WebPageController::class, 'shopcart'])->name('web_carrito');
 Route::get('/pagar', [WebPageController::class, 'pay'])->name('web_pay');
