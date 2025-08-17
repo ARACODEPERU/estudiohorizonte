@@ -57,13 +57,13 @@ class WebPageController extends Controller
         ]);
     }
 
-    
+
     public function about()
     {
         return view('pages.about');
     }
 
-    
+
     public function contact()
     {
         return view('pages.contact');
@@ -112,7 +112,7 @@ class WebPageController extends Controller
 
     public function courses()
     {
-        
+
         $courses = OnliItem::with('course')->get();
         $courses = $courses->shuffle();
         $categories = AcaCategoryCourse::all();
@@ -143,13 +143,13 @@ class WebPageController extends Controller
         //     // 'banner' => $banner,
         //     'title' => $title
         // ]);
-        
+
         return view('pages.courses', [
             'courses' => $courses,
             'categories' => $categories
         ]);
     }
-    
+
     public function coursedescription($id)
     {
         $item = OnliItem::find($id);
@@ -241,10 +241,16 @@ class WebPageController extends Controller
     }
     public function complaints()
     {
-        return view('pages/complaints-book');
+        $monedas = DB::table('sunat_currency_types')->get();
+
+        $tipoDocumentos = DB::table('identity_document_type')->get();
+        return view('pages/complaints-book', [
+            'monedas' => $monedas,
+                'tipoDocumentos' => $tipoDocumentos,
+        ]);
     }
-    
-    
+
+
     public function shopcart()
     {
         return view('pages.shop-cart');

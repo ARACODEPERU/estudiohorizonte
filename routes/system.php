@@ -13,3 +13,5 @@ Route::middleware('auth')->group(function () {
     ///users///
     Route::get('datatables/users', [UserController::class, 'getUsers'])->name('users-tables-list');
 });
+
+Route::post('complaints-book/store', [ComplaintsBookController::class, 'storeByClient'])->name('complaints_book_store');
