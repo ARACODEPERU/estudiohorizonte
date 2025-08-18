@@ -30,7 +30,7 @@ use Modules\Sales\Http\Controllers\SalesController;
 Route::get('/home', [WebPageController::class, 'index'])->name('index_main');
 
 // Route::get('/', [WebPageController::class, 'construction'])->name('construction');
-Route::get('/', [WebPageController::class, 'index'])->name('index_main');
+Route::get('/', [WebPageController::class, 'index'])->name('index_main2');
 Route::get('/nosotros', [WebPageController::class, 'about'])->name('web_about');
 Route::get('/cursos', [WebPageController::class, 'courses'])->name('web_courses');
 // Route::get('/curso-descripcion',  [WebPageController::class, 'coursedescription'])->name('web_course_description');
@@ -210,7 +210,7 @@ Route::middleware('auth')->group(function () {
         'person/birthdays',
         [PersonController::class, 'getBirthdays']
     )->name('person-birthdays');
-	
+
     Route::get('calendar/index', [CalendarController::class, 'index'])->name('calendar');
     ///////////////META FACEBOOK WHATSAPP/////////////////
 
