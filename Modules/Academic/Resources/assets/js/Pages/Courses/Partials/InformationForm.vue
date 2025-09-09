@@ -297,7 +297,7 @@ const uploadImage = (blobInfo, progress) => {
                     <div class="relative w-full">
                         <select v-model="teacherSelected" id="teacher_id" class="form-select text-white-dark">
                             <option selected>Seleccionar</option>
-                            <option v-for="(te,k) in teachers" :value="k">{{ te.person.father_lastname+" "+te.person.mother_lastname+" "+te.person.names }}</option>
+                            <option v-for="(te,k) in teachers" :value="k">{{ te.person.names+" "+te.person.father_lastname+" "+te.person.mother_lastname }}</option>
                         </select>
                     </div>
                     <button @click="addTeacher" type="button" class="btn btn-primary ml-2">
@@ -333,7 +333,7 @@ const uploadImage = (blobInfo, progress) => {
                                             <img v-else :src="'https://ui-avatars.com/api/?name='+tea.teacher.person.full_name+'&size=500&rounded=true'" class="w-16 h-16 rounded" :alt="tea.teacher.person.full_name"/>
                                         </div>
                                         <div>
-                                            <h4>{{ tea.teacher.person.father_lastname+" "+ tea.teacher.person.mother_lastname+" "+ tea.teacher.person.names }}</h4>
+                                            <h4>{{ tea.teacher.person.names+" "+ tea.teacher.person.father_lastname+" "+ tea.teacher.person.mother_lastname }}</h4>
 
                                             <p class="text-white-dark overflow-hidden min-w-[300px] line-clamp-1">
                                                 DNI: {{ tea.teacher.person.number }}
