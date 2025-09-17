@@ -1,4 +1,11 @@
 <div>
+
+    @php
+    $parameters = new \App\Models\Parameter();
+    $P000022=$parameters->where('parameter_code', 'P000022')->value('value_default')?? "";
+    $cadena_decodificada = htmlspecialchars_decode($P000022, ENT_QUOTES);
+    @endphp
+    {!! $cadena_decodificada !!}
     <header class="header header-3 header-6 header-7 sticky-active">
             <div class="top-bar" style="background: #32464b;">
                 <div class="container">
