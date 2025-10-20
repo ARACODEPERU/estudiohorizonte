@@ -7,7 +7,7 @@
     @endphp
     {!! $cadena_decodificada !!}
     <header class="header header-3 header-6 header-7 sticky-active">
-            <div class="top-bar" style="background: #32464b;">
+            <div class="top-bar" style="background: #1d173d;">
                 <div class="container">
                     <div class="top-bar-inner">
                         <div class="top-bar-left">
@@ -67,7 +67,7 @@
                                 <a href="https://estudiohorizonte.org/login" class="ed-primary-btn header-btn">Campus Virtual</a>
                                 <div class="header-logo d-none d-lg-none">
                                     <a href="">
-                                        <img src="themes/webpage/assets/img/logo/logo-1.png" alt="Logo">
+                                        <img src="{{ asset('themes/webpage/assets/img/logo/logo-1.png') }}" alt="Logo">
                                     </a>
                                 </div>
                                 <div class="header-right-item d-lg-none d-md-block">

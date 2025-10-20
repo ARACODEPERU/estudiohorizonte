@@ -114,7 +114,7 @@
                                             <a
                                                 href="{{ route('web_course_description', $item->id) }}">{{ $item->name }}</a>
                                         </h3>
-                                        <div class="course-author-box">
+                                        {{-- <div class="course-author-box">
                                             <div class="course-author">
                                                 <div class="author-img">
                                                     <img src="{{ isset($item->course->teacher->person->image) ? asset('storage/'.$item->course->teacher->person->image) : '' }}"
@@ -132,13 +132,13 @@
                                             <ul class="course-review">
                                                 <li><span class="price">S/ {{ $item->price }}</span></li>
                                             </ul>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <div class="bottom-content">
                                         <a href="{{ route('web_course_description', $item->id) }}" class="course-btn">Leer
                                             Más</a>
                                         <a href="https://wa.link/g3i7et" class="ed-primary-btn-2">
-                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp; Adquirir
+                                            <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 20px;"></i>&nbsp; S/ {{ $item->price }}
                                         </a>
                                     </div>
                                 </div>
