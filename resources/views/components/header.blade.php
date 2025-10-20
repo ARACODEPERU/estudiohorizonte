@@ -83,4 +83,29 @@
                 </div>
             </div>
     </header>
+
+    <div id="popup-search-box">
+        <div class="box-inner-wrap d-flex align-items-center">
+            <form id="form" action="#" method="get" role="search">
+                <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
+            </form>
+            <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+        </div>
+    </div>
+    <!-- /#popup-search-box -->
+
+    <div class="mobile-side-menu">
+        <div class="side-menu-content">
+            <div class="side-menu-head">
+                <a href="{{ route('index_main') }}"><img src="{{ asset('storage/'.$header[0]->content) }}" alt="logo"></a>
+                <button class="mobile-side-menu-close"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="side-menu-wrap"></div>
+            <ul class="side-menu-list">
+                <li><i class="fa-light fa-location-dot"></i>Dirección : <span>{{ $header[2]->content }}</span></li>
+                <li><i class="fa-light fa-phone"></i>Phone : <a href="tel:+01569896654">{{ $header[1]->content }}</a></li>
+                <li><i class="fa-light fa-envelope"></i>Email : <a href="mailto:info@example.com">info@example.com</a></li>
+            </ul>
+        </div>
+    </div>
 </div>

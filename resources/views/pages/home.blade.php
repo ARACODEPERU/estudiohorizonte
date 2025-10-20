@@ -7,30 +7,6 @@
     <x-header />
     <!-- /.Main Header -->
 
-    <div id="popup-search-box">
-        <div class="box-inner-wrap d-flex align-items-center">
-            <form id="form" action="#" method="get" role="search">
-                <input id="popup-search" type="text" name="s" placeholder="Type keywords here...">
-            </form>
-            <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
-        </div>
-    </div>
-    <!-- /#popup-search-box -->
-
-    <div class="mobile-side-menu">
-        <div class="side-menu-content">
-            <div class="side-menu-head">
-                <a href=""><img src="themes/webpage/assets/img/logo/logo-1.png" alt="logo"></a>
-                <button class="mobile-side-menu-close"><i class="fa-regular fa-xmark"></i></button>
-            </div>
-            <div class="side-menu-wrap"></div>
-            <ul class="side-menu-list">
-                <li><i class="fa-light fa-location-dot"></i>Address : <span>Amsterdam, 109-74</span></li>
-                <li><i class="fa-light fa-phone"></i>Phone : <a href="tel:+01569896654">+01 569 896 654</a></li>
-                <li><i class="fa-light fa-envelope"></i>Email : <a href="mailto:info@example.com">info@example.com</a></li>
-            </ul>
-        </div>
-    </div>
     <!-- /.mobile-side-menu -->
     <div class="mobile-side-menu-overlay"></div>
 
