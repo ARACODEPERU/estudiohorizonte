@@ -47,8 +47,9 @@ class WebPageController extends Controller
 
     public function index()
     {
-        $courses = OnliItem::with('course')->get();
-        $courses = $courses->shuffle();
+        // $courses = OnliItem::with('course')->get();
+        $courses = OnliItem::with('course')->orderBy('created_at', 'desc')->get();
+        // $courses = $courses->shuffle();
         $categories = AcaCategoryCourse::all();
 
         return view('pages.home', [
