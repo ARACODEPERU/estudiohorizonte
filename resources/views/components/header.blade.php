@@ -48,7 +48,7 @@
                                         <a href="{{ route('index_main') }}">Home</a>
                                     </li>
                                     <li><a href="{{ route('web_about') }}">Nosotros</a></li>
-                                    <li><a href="{{ route('web_courses') }}">Formación Continua</a></li>
+                                    {{-- <li><a href="{{ route('web_courses') }}">Formación Continua</a></li> --}}
                                     <li><a href="{{ route('web_contact_us') }}">Contacto</a></li>
                                 </ul>
                             </div>
