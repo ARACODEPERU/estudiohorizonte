@@ -16,7 +16,8 @@
                         </div>
                     </div> --}}
                     <div class="row footer-wrap">
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
                             <div class="footer-widget">
                                 <h3 class="widget-header">¡Póngase en contacto con nosotros!</h3>
                                 <p class="mb-30">{{ $footer[0]->content }}</p>
@@ -33,7 +34,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-md-3">
                             <div class="footer-widget widget-2">
                                 <h3 class="widget-header">Navegar</h3>
                                 <ul class="footer-list">
@@ -44,7 +45,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-md-3">
                             <div class="footer-widget widget-2">
                                 <h3 class="widget-header">Legal</h3>
                                 <ul class="footer-list">
@@ -54,7 +55,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-md-1"></div>
+                        {{-- <div class="col-lg-3 col-md-6">
                             <div class="footer-widget">
                                 <h3 class="widget-header">Últimos Cursos</h3>
                                 <div class="sidebar-post mb-20">
@@ -68,17 +70,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                {{-- <div class="sidebar-post">
-                                    <img src="themes/webpage/assets/img/images/footer-post-2.png" alt="post">
-                                    <div class="post-content">
-                                        <h3 class="title"><a href="#">Título del curso</a></h3>
-                                        <ul class="post-meta">
-                                            <li><i class="fa fa-calendar"></i>20 April, 2025</li>
-                                        </ul>
-                                    </div>
-                                </div> --}}
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
